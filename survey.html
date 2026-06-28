@@ -769,17 +769,36 @@ function submit(){
     .catch(()=> showDone(result, true));
 }
 
+// Candidates at/above this (and not screened out) are invited to record a video.
+// Keep in sync with VIDEO_THRESHOLD in the Apps Script.
+const VIDEO_THRESHOLD = 62;
+
 function showDone(result, warn){
   nav.classList.add('hide');
   progfill.style.width='100%'; progtxt.textContent='Done';
-  body.innerHTML = `
-    <div class="donewrap">
-      <div class="big">🌸</div>
-      <h1 style="font-size:2.2rem;margin-bottom:12px">Thank you — that's everything.</h1>
-      <p style="color:var(--warm-grey);max-width:44ch;margin:0 auto 16px">We read every questionnaire personally. If you look like a great fit, we'll be in touch to arrange a trial day out on the road with Brandon so you can see the role for real.</p>
-      <p style="color:var(--warm-grey);max-width:44ch;margin:0 auto">Thanks for taking the time — it genuinely tells us a lot.</p>
-      ${warn?'<p style="color:var(--coral);font-size:.85rem;margin-top:18px">(If you saw any error sending, please email us to confirm.)</p>':''}
-    </div>`;
+
+  const eligible = result && result.total >= VIDEO_THRESHOLD && (!result.gates || !result.gates.length);
+  if(eligible){
+    const link = 'video.html?n=' + encodeURIComponent(answers.name||'') + '&e=' + encodeURIComponent(answers.email||'');
+    body.innerHTML = `
+      <div class="donewrap">
+        <div class="big">🌟</div>
+        <h1 style="font-size:2.2rem;margin-bottom:12px">You're through to the next step!</h1>
+        <p style="color:var(--warm-grey);max-width:46ch;margin:0 auto 18px">Your answers really stood out. There's one last quick step: a short <strong>2–3 minute video</strong> introducing yourself — who you are, why this role appeals to you, and why you'd be great at it. Record it right here on your phone or computer.</p>
+        <a href="${link}" class="btn" style="display:inline-block;text-decoration:none;margin-bottom:14px">Record my video 🎥</a>
+        <p style="color:var(--warm-grey);font-size:.9rem;max-width:42ch;margin:0 auto">No rush — we've also emailed you this link, so you can do it whenever you're ready.</p>
+        ${warn?'<p style="color:var(--coral);font-size:.85rem;margin-top:18px">(If you saw any error sending, please email us to confirm.)</p>':''}
+      </div>`;
+  } else {
+    body.innerHTML = `
+      <div class="donewrap">
+        <div class="big">🌸</div>
+        <h1 style="font-size:2.2rem;margin-bottom:12px">Thank you — that's everything.</h1>
+        <p style="color:var(--warm-grey);max-width:44ch;margin:0 auto 16px">We read every questionnaire personally. If you look like a great fit, we'll be in touch to arrange a trial day out on the road with Brandon so you can see the role for real.</p>
+        <p style="color:var(--warm-grey);max-width:44ch;margin:0 auto">Thanks for taking the time — it genuinely tells us a lot.</p>
+        ${warn?'<p style="color:var(--coral);font-size:.85rem;margin-top:18px">(If you saw any error sending, please email us to confirm.)</p>':''}
+      </div>`;
+  }
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
@@ -799,6 +818,7 @@ function showPreview(result, payload){
       ${result.gates.length?`<div style="color:#e07a5f;font-weight:600;margin-top:8px">Knockouts: ${result.gates.join('; ')}</div>`:''}
       ${result.consistency==='check'?`<div style="color:#a88b5a;font-weight:600;margin-top:6px">Consistency: worth reviewing</div>`:''}
       ${result.attention==='check'?`<div style="color:#a88b5a;font-weight:600;margin-top:6px">Memory check: missed — worth reviewing (not a knockout)</div>`:''}
+      <div style="margin-top:8px;font-weight:600;color:${(result.total>=VIDEO_THRESHOLD && !result.gates.length)?'#4a6b54':'#6b625a'}">Video step: ${(result.total>=VIDEO_THRESHOLD && !result.gates.length)?'invited ✓':'not invited'}</div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px">
       ${Object.entries({Fit:'FIT',Detail:'CONS',Solo:'AUTO',Tech:'TECH',Sales:'SALES',Reliable:'RELI',Effort:'EFFORT'}).map(([k,d])=>
