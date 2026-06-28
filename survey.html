@@ -132,7 +132,7 @@
 const ENDPOINT = "https://script.google.com/macros/s/AKfycbwkTIpyImAAc9f8KC0BEIVgsQjTcuQrBpVxiM8-hOnkOgQ-JhdUPZ9nK4x-EawMDzQw7Q/exec";
 
 /* Dimension weights (sum to 100). Sales is re-weighted by track at scoring time. */
-const WEIGHTS = { FIT:25, CONS:22, AUTO:18, SALES:18, RELI:7, EFFORT:10 };
+const WEIGHTS = { FIT:22, CONS:18, AUTO:15, SALES:16, RELI:7, EFFORT:10, TECH:12 };
 
 /* ---------- Likert helper ---------- */
 function L(id, dim, text, reverse=false){ return {type:'likert', id, dim, text, reverse}; }
@@ -146,7 +146,7 @@ const STEPS = [
 { welcome:true },
 
 /* 1 — THE BASICS */
-{ eyebrow:"Section 1 of 7", title:"First, the basics",
+{ eyebrow:"Section 1 of 8", title:"First, the basics",
   intro:"A few quick details so we know who you are and what you're after.",
   questions:[
     {type:'text', id:'name',  label:"Your full name", required:true},
@@ -186,7 +186,7 @@ const STEPS = [
   ]},
 
 /* 2 — THE HONEST JOB PREVIEW */
-{ eyebrow:"Section 2 of 7", title:"The honest version of the job",
+{ eyebrow:"Section 2 of 8", title:"The honest version of the job",
   intro:"Before you go further, here's the real day-to-day — the good and the demanding. Be honest with yourself. The wrong fit doesn't help you or us, and there's no shame in deciding it isn't for you.",
   questions:[
     {type:'radio', id:'p_solo', dim:'FIT', required:true,
@@ -240,7 +240,7 @@ const STEPS = [
   ]},
 
 /* 3 — CONSCIENTIOUSNESS & DETAIL */
-{ eyebrow:"Section 3 of 7", title:"How you work",
+{ eyebrow:"Section 3 of 8", title:"How you work",
   intro:"For each statement, tell us how much it sounds like you. Be honest — we're looking for the right fit, not a perfect score. (1 = not like me, 5 = exactly like me.)",
   questions:[
     L('c1','CONS',"I keep things organised and I always know where I'm up to."),
@@ -269,7 +269,7 @@ const STEPS = [
   ]},
 
 /* 4 — WORKING SOLO & INITIATIVE */
-{ eyebrow:"Section 4 of 7", title:"Out on your own",
+{ eyebrow:"Section 4 of 8", title:"Out on your own",
   intro:"There's no one looking over your shoulder. These show us how you handle that freedom.",
   questions:[
     {type:'radio', id:'sjt_early', dim:'AUTO', required:true,
@@ -316,8 +316,49 @@ const STEPS = [
     L('a2','AUTO',"I'm good at keeping myself motivated without a boss pushing me."),
   ]},
 
-/* 5 — SALES & COLD CALLING */
-{ eyebrow:"Section 5 of 7", title:"Winning new clients",
+/* 5 — TECHNOLOGY */
+{ eyebrow:"Section 5 of 8", title:"Phones, apps & maps",
+  intro:"This role runs off a smartphone — you'll use it to navigate your route, find clients, keep in touch and check things off. Being confident with a phone and with Google Maps isn't optional here, so be honest about where you're at.",
+  questions:[
+    {type:'radio', id:'t_phone', dim:'TECH', required:true,
+      label:"How comfortable are you using a smartphone and its apps day to day?",
+      options:[
+        {t:"Very — I use apps confidently every day", v:'very', s:5},
+        {t:"Comfortable — I get around just fine", v:'fine', s:4},
+        {t:"Okay — I can manage the basics", v:'basic', s:2},
+        {t:"Honestly, I struggle with smartphones and apps", v:'struggle', s:0, gate:"Not proficient with smartphones/apps (core to the role)"},
+      ]},
+    {type:'radio', id:'t_maps', dim:'TECH', required:true,
+      label:"You'll use Google Maps constantly — to navigate to clients and plan an efficient run. How well do you know it?",
+      options:[
+        {t:"Inside out — I could plan a multi-stop route in it without thinking", v:'expert', s:5},
+        {t:"Well — I'm comfortable navigating with it", v:'good', s:4},
+        {t:"I can follow its directions, but I wouldn't plan routes", v:'follow', s:2},
+        {t:"I don't really use Google Maps", v:'none', s:0, gate:"Not able to use Google Maps (core to the role)"},
+      ]},
+    {type:'radio', id:'t_reroute', dim:'TECH', required:true,
+      label:"Your phone warns you of heavy traffic on the way to your next stop. What do you do?",
+      options:[
+        {t:"Check Maps for a faster way and reshuffle my stop order if it helps", v:'a', s:5},
+        {t:"Take the reroute Maps suggests", v:'b', s:4},
+        {t:"Carry on the original way and hope it clears", v:'c', s:1},
+        {t:"I'd find sorting that out on the phone stressful", v:'d', s:0},
+      ]},
+    L('t_learn','TECH',"I pick up new apps quickly, without needing much hand-holding."),
+    L('t_log','TECH',"I'm comfortable texting, taking photos, and using apps to log or check things off."),
+    {type:'radio', id:'t_software', dim:'TECH', required:true,
+      label:"Bonus — any experience with these? We use a couple of tools on the desktop side, like Salesforce and Xero.",
+      sub:"No experience is totally fine — it's a plus, not a requirement.",
+      options:[
+        {t:"Yes — I've used Salesforce and/or Xero", v:'yes', s:5},
+        {t:"I've used similar CRM or accounting software", v:'similar', s:3},
+        {t:"No, but I'd be happy to learn", v:'learn', s:1},
+        {t:"No experience with that kind of software", v:'none', s:0},
+      ]},
+  ]},
+
+/* 6 — SALES & COLD CALLING */
+{ eyebrow:"Section 6 of 8", title:"Winning new clients",
   intro:"Part of this role — and most of it, if you want to grow it — is offering businesses a free flower trial, then popping back to see if they'd like to keep it. The flowers really do sell themselves, but you have to be willing to knock on the door.",
   questions:[
     {type:'radio', id:'s_door', dim:'SALES', required:true,
@@ -364,7 +405,7 @@ const STEPS = [
   ]},
 
 /* 6 — THE EFFORT QUESTIONS */
-{ eyebrow:"Section 6 of 7", title:"In your own words",
+{ eyebrow:"Section 7 of 8", title:"In your own words",
   intro:"Take your time here. These are the answers we read most closely.",
   questions:[
     {type:'textarea', id:'why', dim:'EFFORT', required:true, minChars:150, maxScore:5,
@@ -387,7 +428,7 @@ const STEPS = [
   ]},
 
 /* 7 — FINAL CHECKS */
-{ eyebrow:"Section 7 of 7", title:"Last few",
+{ eyebrow:"Section 8 of 8", title:"Last few",
   intro:"Almost done. A couple of final questions.",
   questions:[
     {type:'radio', id:'lift_hard', dim:'RELI', required:true,
@@ -618,7 +659,7 @@ backBtn.onclick = ()=>{ if(cur>1){ cur--; render(); } };
    SCORING
    ============================================================ */
 function scoreAll(){
-  const dims = {FIT:{r:0,m:0},CONS:{r:0,m:0},AUTO:{r:0,m:0},SALES:{r:0,m:0},RELI:{r:0,m:0},EFFORT:{r:0,m:0}};
+  const dims = {FIT:{r:0,m:0},CONS:{r:0,m:0},AUTO:{r:0,m:0},SALES:{r:0,m:0},RELI:{r:0,m:0},EFFORT:{r:0,m:0},TECH:{r:0,m:0}};
   const gates = [];
   let attention = 'ok';
   const track = answers.track || 'unsure';
@@ -712,7 +753,7 @@ function submit(){
     consistency_flag: result.consistency==='check' ? 'REVIEW' : '',
     attention_flag: result.attention==='check' ? 'REVIEW — missed memory check' : '',
     score_fit: result.sub.FIT, score_conscientiousness: result.sub.CONS, score_autonomy: result.sub.AUTO,
-    score_sales: result.sub.SALES, score_reliability: result.sub.RELI, score_effort: result.sub.EFFORT,
+    score_sales: result.sub.SALES, score_tech: result.sub.TECH, score_reliability: result.sub.RELI, score_effort: result.sub.EFFORT,
     answers_json: JSON.stringify(answers)
   };
 
@@ -760,7 +801,7 @@ function showPreview(result, payload){
       ${result.attention==='check'?`<div style="color:#a88b5a;font-weight:600;margin-top:6px">Memory check: missed — worth reviewing (not a knockout)</div>`:''}
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px">
-      ${Object.entries({Fit:'FIT',Detail:'CONS',Solo:'AUTO',Sales:'SALES',Reliable:'RELI',Effort:'EFFORT'}).map(([k,d])=>
+      ${Object.entries({Fit:'FIT',Detail:'CONS',Solo:'AUTO',Tech:'TECH',Sales:'SALES',Reliable:'RELI',Effort:'EFFORT'}).map(([k,d])=>
         `<div style="background:#fff;border-radius:10px;padding:14px;text-align:center;box-shadow:var(--shadow-soft)"><div style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--sage-deep);font-weight:600">${result.sub[d]}</div><div style="font-size:.78rem;color:var(--warm-grey)">${k}</div></div>`).join('')}
     </div>
     <button class="btn" onclick="location.reload()">↺ Test again</button>`;
