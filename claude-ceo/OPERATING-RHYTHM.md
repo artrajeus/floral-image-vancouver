@@ -1,8 +1,10 @@
 # CEO Operating Rhythm
 
-All times Pacific (Vancouver). Cron schedules are stored in UTC.
+All times Adelaide / Australian Central (ACST, UTC+9:30). Cron schedules are
+stored in UTC and don't auto-shift for daylight saving — when ACDT starts in
+October, reports land an hour later on the clock until the crons are nudged.
 
-## Daily — CEO Daily Brief (7:00am PT, every day)
+## Daily — CEO Daily Brief (7:00am ACST, every day)
 
 1. **Numbers** (vs yesterday and 7-day average):
    - Shopify: sales, orders, AOV (ShopifyQL).
@@ -18,7 +20,7 @@ All times Pacific (Vancouver). Cron schedules are stored in UTC.
 4. **Today's top 3** — the three highest-revenue-impact actions for today.
 5. Keep the brief under ~400 words. Lead with anything needing a decision.
 
-## Monday — Weekly Kickoff (6:00am PT)
+## Monday — Weekly Kickoff (6:00am ACST)
 
 1. Pull last week's scorecard numbers (same sources as daily).
 2. Set this week's plan against the "definition of a good week" in CEO.md:
@@ -31,7 +33,7 @@ All times Pacific (Vancouver). Cron schedules are stored in UTC.
 4. Check the calendar for deadlines/events this week and fold them into the plan.
 5. Deliver the plan as the Monday report.
 
-## Friday — Weekly Review (3:00pm PT)
+## Friday — Weekly Review (3:00pm ACST)
 
 1. Score the week against Monday's plan and the definition of a good week —
    done / partial / missed for each item, with reasons.

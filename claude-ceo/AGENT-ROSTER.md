@@ -11,6 +11,10 @@ CEO orchestrates.
   LinkedIn + **write actions**: create/pause/enable Meta campaigns, ad sets, ads;
   set budgets; boost organic posts.
 - **Supermetrics MCP** — 150+ source reporting (Meta Ads, GA4, etc.) for audits.
+- **Motion Creative Analytics MCP** — Meta-only creative performance insights
+  (spend/scaling/hook analysis, demographic breakdowns, competitor ad libraries).
+  Call `get_auth_context` first, then `get_creative_insights` with
+  `insightType=SPEND` before any other insight type.
 - **adspirer-ads-agent plugin** (enabled) — ads workflows.
 - CEO duties: weekly performance audit (ROAS, CPA, spend, creative fatigue),
   draft new ad copy/creative briefs, recommend budget moves. Budget changes and
@@ -60,7 +64,8 @@ CEO orchestrates.
 - **GitHub MCP** — this repo.
 
 ## Gaps / action needed
-- One connected MCP server is **unauthenticated** and its tools are unavailable
-  until the founder re-authorises it in claude.ai connector settings.
+- **Canva is disconnected** — its tools are unavailable until the founder
+  re-authorises it in claude.ai connector settings. Useful for branded IG/ad
+  design once reconnected.
 - No Slack/WhatsApp connector — reports arrive via session notifications
   (push/email) and Gmail drafts.
