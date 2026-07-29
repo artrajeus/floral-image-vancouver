@@ -11,10 +11,17 @@ October, reports land an hour later on the clock until the crons are nudged.
    - Meta Ads: spend, ROAS, CPA (Windsor/Supermetrics).
    - Klaviyo: recent campaign opens/clicks/revenue.
    - Instagram: follower count, engagement on latest posts (Windsor/Supermetrics).
-2. **Inbox triage** (all inboxes — Gmail + Outlook):
+2. **Inbox triage** — see the mailbox coverage table in `AGENT-ROSTER.md`. Scan
+   the covered mailboxes only (currently aussiefloat@gmail.com and
+   Vancouver@floralimage.com) and **name which ones were scanned** in the report.
+   Never write "all inboxes".
    - List emails from the last 24h that need the founder's reply, most important
      first, one line each on why.
    - Create Gmail **draft** replies for the routine ones; flag the judgment calls.
+     The Microsoft connector cannot create drafts — for Outlook items, put the
+     suggested reply text in the report.
+   - If mail forwarded from another account is labelled (e.g. `MXTology`), triage
+     it as its own section so the businesses stay separate.
 3. **Task status** — what each agent workstream has in flight, on-track / at-risk /
    blocked, with the blocker named.
 4. **Today's top 3** — the three highest-revenue-impact actions for today.

@@ -41,10 +41,27 @@ CEO orchestrates.
   `ecommerce-blog-writer` (SEO/AEO blog posts).
 
 ### Inbox agent
-- **Gmail MCP** — search threads, read messages, labels, create/update drafts.
-- **Outlook MCP** — email search, calendar, Teams chat, SharePoint.
-- CEO duties: daily scan of all inboxes; flag emails needing a reply; prepare
-  draft replies (drafts only — founder sends).
+
+**Mailbox coverage (verified 2026-07-30) — this is NOT "all inboxes":**
+
+| Mailbox | Covered? | Via |
+|---|---|---|
+| aussiefloat@gmail.com | ✅ yes | Gmail connector is authenticated as this account |
+| Vancouver@floralimage.com | ✅ yes | Microsoft 365 connector (`get_me` confirms) |
+| **mxtologycocktails@gmail.com** | ❌ **no** | not connected — MXTology's own inbox is a blind spot |
+| artrajeus@gmail.com | ❌ no | only visible where it emails aussiefloat@gmail.com |
+| artraje@hotmail.com | ❌ no | personal Microsoft account; `mailboxOwnerEmail` returns ErrorInvalidUser |
+
+- Tools: Gmail — search threads, read messages, labels, create/update drafts.
+  Microsoft 365 — email search and read only (**cannot create drafts**; supply
+  suggested reply text in the report instead).
+- CEO duties: daily scan of the **covered** mailboxes; flag emails needing a
+  reply; prepare Gmail draft replies (drafts only — founder sends). Every daily
+  brief must state which mailboxes were scanned, and must not imply coverage of
+  the uncovered ones.
+- Note: the connected Gmail account belongs to **Aussie Floats**, not MXTology —
+  its labels and threads are CRIB/freight/AIMS work. MXTology festival, wholesale
+  and supplier enquiries land in the uncovered mxtologycocktails@gmail.com.
 
 ### Calendar agent
 - **Google Calendar MCP** — list/search/create events, suggest times.
@@ -64,8 +81,18 @@ CEO orchestrates.
 - **GitHub MCP** — this repo.
 
 ## Gaps / action needed
+- **mxtologycocktails@gmail.com is not scanned** — the highest-priority gap,
+  since MXTology revenue is goal #1. Fix: in that account's Gmail settings turn on
+  auto-forward to aussiefloat@gmail.com, add a filter that labels the forwarded
+  mail `MXTology`, and add it as a "Send mail as" address on aussiefloat so draft
+  replies can go out from the right address. Alternatively connect a second Gmail
+  connector if claude.ai permits it.
+- **artrajeus@gmail.com and artraje@hotmail.com not scanned** — same
+  forwarding-plus-label fix if the founder wants them in the daily triage.
 - **Canva is disconnected** — its tools are unavailable until the founder
   re-authorises it in claude.ai connector settings. Useful for branded IG/ad
   design once reconnected.
+- **Motion Creative Analytics trial expired** — Windsor covers current ad
+  reporting; only reactivate for competitor ad-library analysis.
 - No Slack/WhatsApp connector — reports arrive via session notifications
   (push/email) and Gmail drafts.
