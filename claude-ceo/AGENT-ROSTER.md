@@ -42,15 +42,28 @@ CEO orchestrates.
 
 ### Inbox agent
 
+**Scope: business mailboxes only.** Personal mail is deliberately excluded
+(founder decision 2026-07-30) — do not triage or report on
+artrajeus@gmail.com or artraje@hotmail.com.
+
 **Mailbox coverage (verified 2026-07-30) — this is NOT "all inboxes":**
 
-| Mailbox | Covered? | Via |
+| Business mailbox | Covered? | Via |
 |---|---|---|
 | aussiefloat@gmail.com | ✅ yes | Gmail connector is authenticated as this account |
 | Vancouver@floralimage.com | ✅ yes | Microsoft 365 connector (`get_me` confirms) |
-| **mxtologycocktails@gmail.com** | ❌ **no** | not connected — MXTology's own inbox is a blind spot |
-| artrajeus@gmail.com | ❌ no | only visible where it emails aussiefloat@gmail.com |
-| artraje@hotmail.com | ❌ no | personal Microsoft account; `mailboxOwnerEmail` returns ErrorInvalidUser |
+| aaron@mxtology.com.au | ⏳ pending forward | neither connector can reach it directly (Microsoft returns ErrorInvalidUser; Gmail is aussiefloat-only). Arrives once forwarding is on, labelled `MXTology/Aaron` |
+| mxtologycocktails@gmail.com | ⏳ pending forward | same — arrives labelled `MXTology/Cocktails` |
+
+**Routing (labels already created in aussiefloat@gmail.com):**
+- `MXTology` (Label_46) — parent, catches all MXTology mail
+- `MXTology/Aaron (aaron@mxtology.com.au)` (Label_47)
+- `MXTology/Cocktails (mxtologycocktails@gmail.com)` (Label_48)
+
+Founder setup required once, per forwarded account: turn on auto-forward to
+aussiefloat@gmail.com; add a filter applying the matching label (**do not tick
+"Skip the Inbox"**); and add the address under aussiefloat's Settings → Accounts
+→ "Send mail as" so draft replies leave from the correct address.
 
 - Tools: Gmail — search threads, read messages, labels, create/update drafts.
   Microsoft 365 — email search and read only (**cannot create drafts**; supply
@@ -81,14 +94,11 @@ CEO orchestrates.
 - **GitHub MCP** — this repo.
 
 ## Gaps / action needed
-- **mxtologycocktails@gmail.com is not scanned** — the highest-priority gap,
-  since MXTology revenue is goal #1. Fix: in that account's Gmail settings turn on
-  auto-forward to aussiefloat@gmail.com, add a filter that labels the forwarded
-  mail `MXTology`, and add it as a "Send mail as" address on aussiefloat so draft
-  replies can go out from the right address. Alternatively connect a second Gmail
-  connector if claude.ai permits it.
-- **artrajeus@gmail.com and artraje@hotmail.com not scanned** — same
-  forwarding-plus-label fix if the founder wants them in the daily triage.
+- **aaron@mxtology.com.au and mxtologycocktails@gmail.com await forwarding** —
+  the highest-priority gap, since MXTology revenue is goal #1 and festival,
+  wholesale and supplier enquiries land there. Labels and triage spec are ready;
+  only the founder-side forwarding/send-as setup remains. Until then, every daily
+  brief must say these two are not yet flowing.
 - **Canva is disconnected** — its tools are unavailable until the founder
   re-authorises it in claude.ai connector settings. Useful for branded IG/ad
   design once reconnected.
