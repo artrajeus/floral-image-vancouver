@@ -60,3 +60,27 @@ After the third burst week (w/c 2026-08-31): compare the 3 burst weeks vs the
 - No clear difference or worse → kill it. Total cost of the answer ≤ ~A$300.
 - Confounders (a sale, stockout, or unrelated spike in any week) must be noted
   in that week's review and the affected pair discounted.
+
+## Held constant for the duration (decided 2026-08-04)
+
+To keep burst vs control comparable, these do NOT change mid-experiment:
+- **Google Ads — parked until after week 6.** Founder decision; launching a new
+  channel mid-test would make burst and control weeks incomparable. Revisit at
+  the mid-September wrap.
+- **$120 Seoul Tonic free-gift tier — deferred** for the same reason; the clean
+  pre-experiment window closed on 2026-08-03.
+- **$66 free-shipping threshold — unchanged** (evidence: 8 of the last 50 orders
+  sat at exactly $72, the cheapest basket clearing $66).
+- **Meta budget — unchanged.** If performance demands action, refresh creative
+  rather than cut budget; budget is the control variable.
+- **Email cadence — identical across burst and control weeks.** Never add a send
+  only because it is a burst week.
+
+## Log
+
+- **Burst 1 — Thu 2026-08-06.** Code `BURST0806`. Measurement confirmed working
+  end to end: Windsor (Meta spend/CPM/reach + Instagram) restored 2026-08-04 on
+  the aaron@mxtology.com.au trial; Shopify covers code redemptions and UTM
+  orders. Note: Windsor trial expires ~2026-09-03, around week 4 — renew or move
+  to Basic before then or the back half of the data is lost.
+  Context: Canberra Uni gig (Reece Mastin) falls Fri 7 Aug, the day after.
