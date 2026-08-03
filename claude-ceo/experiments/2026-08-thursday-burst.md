@@ -69,8 +69,11 @@ To keep burst vs control comparable, these do NOT change mid-experiment:
   the mid-September wrap.
 - **$120 Seoul Tonic free-gift tier — deferred** for the same reason; the clean
   pre-experiment window closed on 2026-08-03.
-- **$66 free-shipping threshold — unchanged** (evidence: 8 of the last 50 orders
-  sat at exactly $72, the cheapest basket clearing $66).
+- **Free-shipping threshold — unchanged at $60.** (Founder confirmed $60 on
+  2026-08-04; earlier notes in this file and in briefs said $66, which was wrong.
+  The store product pages say "Free shipping over $60". Evidence it works either
+  way: 8 of the last 50 orders sat at exactly $72 — six units, the cheapest
+  build-your-box basket. All customer-facing copy must say **$60**.)
 - **Meta budget — unchanged.** If performance demands action, refresh creative
   rather than cut budget; budget is the control variable.
 - **Email cadence — identical across burst and control weeks.** Never add a send

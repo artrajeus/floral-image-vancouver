@@ -2,6 +2,20 @@
 
 Every deliverable is checked against these before it appears in a report as "done".
 
+## Hard facts — check these before any copy or creative ships
+- **Free shipping threshold is $60** (not $66). Matches the store product pages.
+- **Pouch artwork rules live in Higgsfield as saved Elements** (`show_reference_elements`),
+  one per flavour, e.g. `mxt-pina-colada-pouch`, `mxt-fabulous-af-cosmo-pouch`.
+  Each carries the full spec: rectangular foil stand-up pouch, flat bottom seal,
+  never glass-shaped, glossy black left panel with the iridescent rainbow
+  MXT OLOGY wordmark, flavour name on the right panel, Y-shaped window with a
+  flavour-specific liquid colour, white screw cap upper-left.
+  **Always generate pouch imagery via these Elements** — embed `<<<element_id>>>`
+  in the prompt. Elements are only supported on `nano_banana_2`,
+  `nano_banana_flash`, `gpt_image_2`, `seedream_v4_5`, `seedream_v5_lite` and
+  `cinematic_studio_2_5` — NOT on `marketing_studio_image`, which invents labels.
+- Product photography on Shopify is current (re-shot late July 2026).
+
 ## All content
 - On-brand for MXTology: confident, fun, premium cocktail culture. No generic
   AI filler phrases.
