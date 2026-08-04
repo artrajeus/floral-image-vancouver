@@ -33,9 +33,13 @@ conditions.
   placements — clone the structure of "National Margarita Day — 24h Traffic
   (LP v2)".
 - Creative: one hook per burst (kickoff drafts it; founder approves).
-- **Unique discount code per burst** (e.g. BURST1-style, created in Shopify at
-  launch, only revealed in this burst's ad + landing page). Redemptions =
-  hard attribution.
+- **No discount code.** (Reversed 2026-08-04.) The original design called for a
+  unique code per burst as hard attribution, but a code present only in burst
+  weeks changes the offer and makes burst weeks incomparable to control weeks —
+  it would have measured "burst + discount" vs "nothing". Shopify referrer
+  attribution is confirmed working (last 14 days: 30 orders / $4,110 attributed
+  to social/facebook), and the burst ad carries its own utm_campaign, so
+  attribution is already covered without altering the offer.
 - **UTMs** on the ad link: `utm_source=facebook&utm_medium=burst&utm_campaign=
   burst-YYYYMMDD`.
 - Same-day hook on other channels: one IG post; email only if one is already
@@ -81,7 +85,28 @@ To keep burst vs control comparable, these do NOT change mid-experiment:
 
 ## Log
 
-- **Burst 1 — Thu 2026-08-06.** Code `BURST0806`. Measurement confirmed working
+- **Burst 1 built and staged 2026-08-04.** Meta campaign `120257261774290197`,
+  ad set `120257261777680197` (broad AU 18+, all placements, hard end Fri
+  2026-08-07 09:00 ACST), ad `120257271191510197`. Traffic objective,
+  A$90 lifetime, LOWEST_COST_WITHOUT_CAP (the account default demanded a bid cap,
+  which would have throttled cheap reach). Destination: build-your-own box with
+  `utm_source=facebook&utm_medium=burst&utm_campaign=burst-20260806`.
+- **Enabled early in error 2026-08-04, then paused.** The create_adset action has
+  no start_time parameter, only end_time — so enabling before Thursday spreads the
+  lifetime budget across days instead of 24 hours. Spent A$9.85 before pausing.
+  **Early read is strongly positive: $5.39 CPM, $0.16 CPC, 3.29% CTR, 1,826
+  impressions** — cheaper than the Margarita Day burst ($11 CPM) and ~7× cheaper
+  than the evergreen campaign (~$37). Re-enable scheduled for Thu 09:00 ACST via
+  routine `trig_01LxSWHT9umLqy4AdDuaaw1A`; ~A$80 remains.
+  **Lesson for future bursts: always pause until launch morning, since start time
+  cannot be set through the connector.**
+- **New confounders to track (both launched 2026-08-04):**
+  `MXT_MundiMundi_2026_Conversions` and `MXT-TEST | Static Engine | Sales`.
+  Day-one spend A$48.05 and A$15.19; account daily spend rose from ~A$185 to
+  A$230.75. If these do not run identically through control weeks they will
+  distort the burst-vs-control comparison — confirm their schedule and note it in
+  each weekly review.
+- Measurement confirmed working
   end to end: Windsor (Meta spend/CPM/reach + Instagram) restored 2026-08-04 on
   the aaron@mxtology.com.au trial; Shopify covers code redemptions and UTM
   orders. Note: Windsor trial expires ~2026-09-03, around week 4 — renew or move
