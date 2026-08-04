@@ -106,9 +106,15 @@ To keep burst vs control comparable, these do NOT change mid-experiment:
   2026-08-04 off the back of those emails — and
   `MXT-TEST | Static Engine | Sales`.
   Day-one spend A$48.05 and A$15.19; account daily spend rose from ~A$185 to
-  A$230.75. If these do not run identically through control weeks they will
-  distort the burst-vs-control comparison — confirm their schedule and note it in
-  each weekly review.
+  A$230.75.
+  **Mundi Mundi runs 2026-08-04 to 2026-08-10 only** (order cut-off for festival
+  delivery), i.e. almost entirely inside burst week 1 and not inside control week
+  1. It is a deadline-driven urgency campaign, so it will inflate burst week 1's
+  revenue independently of the burst. **Pair 1 (burst w/c 03-08 vs control w/c
+  10-08) is therefore compromised for the weekly-aggregate decision rule.** The
+  burst's own direct metrics (CPM, CPC, CTR, UTM-attributed orders, post-burst
+  retargeting lift) remain valid because they are separable by campaign.
+  Account is clean from 2026-08-11 onwards.
 - Measurement confirmed working
   end to end: Windsor (Meta spend/CPM/reach + Instagram) restored 2026-08-04 on
   the aaron@mxtology.com.au trial; Shopify covers code redemptions and UTM
