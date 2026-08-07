@@ -83,6 +83,45 @@ To keep burst vs control comparable, these do NOT change mid-experiment:
 - **Email cadence — identical across burst and control weeks.** Never add a send
   only because it is a burst week.
 
+## Scorecard — Week 1 (BURST), w/c 2026-08-03
+
+Recorded 2026-08-07 15:00 ACST. **Friday was incomplete at the time of writing**,
+so weekly aggregates are stated Mon–Thu vs Mon–Thu against the control week.
+
+| Measure | This week (3–6 Aug) | Prior week (27–30 Jul) |
+|---|---|---|
+| Shopify revenue | $3,405.74 | $1,127.61 |
+| Orders | 28 | 11 |
+| Meta spend | $1,049.56 | $752.62 |
+| Blended ROAS | 3.25× | 1.50× |
+| Meta CPA | $41.98 | $83.62 |
+
+**Burst 1 direct metrics** (6 Aug 09:01 → 7 Aug 09:00): spend **$72.21**,
+14,732 impressions, 371 clicks, 13,043 reach, **CPM $4.90**, CPC $0.195,
+CTR 2.52%. Same-day CPM on `#3 - MOF` was $45.38 — the burst bought reach
+**9.3× cheaper**. Total including the 4 Aug accidental spend: $82.68 of $90.
+**306 Shopify sessions** attributed. No discount code (by design).
+IG on burst day: reach 3,309, 11 interactions (best in three weeks), **+0 followers**.
+
+**Not yet readable:** the retargeting mechanism check needs 7–9 Aug complete.
+Do this at Monday's kickoff, not here.
+
+**Confounder — Mundi Mundi.** On 6 Aug it produced $959.97 of the $1,510.77
+Meta-attributed revenue (64%) on $119.02 spend. Pair 1 remains compromised for
+the weekly-aggregate rule, exactly as predicted. The week's headline lift must
+not be credited to the burst.
+
+### Measurement corrections found this week
+- **The planned `utm_campaign=burst-20260806` tag did not land.** Shopify sessions
+  show the Meta **campaign id** (`120257261774290197`) as `utm_campaign` instead.
+  Attribution still works — read bursts by campaign id, not by the burst- slug.
+  Update the Burst spec's UTM line rather than changing the ads mid-experiment.
+- **Burst-attributed orders cannot be read from ShopifyQL.** `utm_campaign` exists
+  on the `sessions` table but not on `sales`, so only sessions are countable.
+  Order-level attribution has to come from the referrer breakdown
+  (`social/facebook`) or from Meta itself. Measurement item 3 above overstates
+  what the tooling can deliver.
+
 ## Log
 
 - **Burst 1 built and staged 2026-08-04.** Meta campaign `120257261774290197`,
