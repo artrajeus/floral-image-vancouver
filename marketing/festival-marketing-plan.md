@@ -107,13 +107,27 @@ For each ★★★ event, clone this checklist with dates worked back from the *
 
 Track per event in one sheet: spend, orders, revenue, MER, AOV, new-customer %, list growth from event UTMs, post-event Club conversions. Success benchmarks from Mundi Mundi to beat: pack AOV ≥ $150, MER ≥ 3, ≥ 30% of pack buyers new to file.
 
-## 7. Compliance checklist (per event, every time)
+## 7. BYO verification log (checked 8 Aug 2026)
+
+The consistent pattern: **BYO lives in the campsite, never the arena, and glass is banned everywhere.** All copy sells the camp occasion.
+
+| Event | Verified policy |
+|---|---|
+| Gympie Muster | Campsite BYO OK; strictly no glass; no BYO in festival precinct |
+| Deni Ute Muster | Campsite: 30 cans or 4L cask per adult (whole festival); no BYO in arena (surrendered at gates) |
+| Strawberry Fields | One slab of cans per vehicle; glass strictly prohibited (decant to plastic). Pouch classification vs "cans" unconfirmed — ask organiser before claiming compliance |
+| Beyond the Valley | 24 cans OR 1×700ml non-glass spirits OR 2×750ml non-glass wine — pouches fit the non-glass spirit allowance |
+| Meredith / Golden Plains | BYO, no glass (long-standing policy) |
+| Mundi Mundi Bash | BYO camping event |
+| Still to verify | Birdsville Races, Earth Frequency, Rabbits Eat Lettuce, NYE on the Hill, Tamworth, Parkes, Big Red Bash 2027 |
+
+## 8. Compliance checklist (per event, every time)
 
 1. Confirm the event's current BYO policy and whether pouches fall under spirit-volume caps — never claim "gate-approved" without checking that year's T&Cs.
 2. Liquor delivery rules by destination state (and dry-community postcodes around Broken Hill/Birdsville) before promising delivery windows.
 3. Meta alcohol ad policy: 18+ targeting, no under-25 lookalike expansion where restricted, responsible-consumption framing.
 
-## 8. Immediate next actions (this week)
+## 9. Immediate next actions (this week)
 
 1. **Decide Bash Pack close-out:** 16 units left, last post ~12 Aug. Push a final "last post" email + ad burst, or hold stock to seed Gympie.
 2. **Launch "The Muster Pack — Gympie"** (27–30 Aug): the window is already at T-3 weeks. Clone product + E1 email + Meta campaign this week.
