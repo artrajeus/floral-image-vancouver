@@ -162,7 +162,19 @@ not be credited to the burst.
   10-08) is therefore compromised for the weekly-aggregate decision rule.** The
   burst's own direct metrics (CPM, CPC, CTR, UTM-attributed orders, post-burst
   retargeting lift) remain valid because they are separable by campaign.
-  Account is clean from 2026-08-11 onwards.
+- **CORRECTION 2026-08-10: Mundi Mundi was extended, and control week 1 is now
+  contaminated too.** The founder extended the order cut-off; the ad set
+  `MundiMundi_Interests_AU` now ends **2026-08-13 21:59 (+0800)**, i.e. it runs
+  through Thursday 13 August — four days into control week 1 (10–16 Aug), and on
+  its heaviest spend days yet ($179 on 9 Aug alone). The earlier note that "the
+  account is clean from 2026-08-11 onwards" is **wrong and withdrawn.**
+  Pair 1 is now compromised on *both* sides: a deadline-urgency campaign inflated
+  the burst week AND inflates the control week. **Pair 1 must be dropped entirely
+  from the weekly-aggregate decision rule** rather than merely discounted. The
+  decision now rests on pairs 2 and 3 (w/c 17-08 vs 24-08, w/c 31-08 vs 07-09),
+  which is why the 4th pair proposed on 2026-08-05 matters more, not less.
+  Lesson: a confounder's end date is a founder decision, not a fixed fact —
+  re-check campaign end times at every kickoff instead of trusting the logged date.
 - Measurement confirmed working
   end to end: Windsor (Meta spend/CPM/reach + Instagram) restored 2026-08-04 on
   the aaron@mxtology.com.au trial; Shopify covers code redemptions and UTM
