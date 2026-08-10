@@ -54,6 +54,11 @@ October, reports land an hour later on the clock until the crons are nudged.
    done / partial / missed for each item, with reasons.
 2. **Quality check** every deliverable produced this week against
    QUALITY-STANDARDS.md. List anything below standard and fix or flag it.
+2a. **Reconcile pouch Elements.** Call `show_reference_elements` (action=`list`)
+   and diff the live workspace against `POUCH-ELEMENTS.md`: report any approved
+   UUID that has disappeared, any live Element not recorded in the file, and any
+   flavour still quarantined. Assets are only "current" if the manifest says so —
+   never judge by Element name or `created_at`.
 3. Revenue readout: week vs prior week (Shopify + Klaviyo attributed + ads).
 4. Carry-overs and recommendations for next week's kickoff.
 

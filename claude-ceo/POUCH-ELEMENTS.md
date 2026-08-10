@@ -1,0 +1,84 @@
+# Pouch Elements — Source of Truth
+
+**This file is the ONLY authority on which Higgsfield Element may be used for
+pouch imagery.** Element *names* are ambiguous and `created_at` does not encode
+which label generation an Element depicts. Always match on **UUID**.
+
+Last reconciled against live Higgsfield: **2026-08-10**.
+
+## The rule
+
+Before generating any pouch image:
+
+1. Call `show_reference_elements` (action=`list`).
+2. For each flavour in the creative, look up its UUID **in the table below**.
+3. Generate **only** if the flavour's row says `approved` AND that UUID still
+   exists in the live list.
+4. If a flavour is `quarantined` or absent — **stop and tell the founder.**
+   Never substitute a different flavour, never fall back to an older Element,
+   never generate the pouch from a text description instead.
+
+## Status: ALL ELEMENTS QUARANTINED (2026-08-10)
+
+Every Element in the workspace was created **2026-06-19/20** or **2026-07-03**.
+The new pouch label artwork was supplied by the founder around **2026-08-04**
+with an instruction to rebuild. **That rebuild was never carried out.** No
+Element has been created since 2026-07-03, so every one of them depicts
+pre-August labels.
+
+Consequence: **no pouch imagery may be generated until the rebuild is done.**
+Creative produced before this date — including the three Instagram images from
+the 2026-08-10 kickoff — uses superseded artwork and must not be published.
+
+| Flavour | Approved UUID | Status | Notes |
+|---|---|---|---|
+| Pornstar Martini | — | ⛔ quarantined | 3 stale Elements exist, none current |
+| Espresso Martini | — | ⛔ quarantined | 2 stale Elements exist |
+| Amaretto Whisky Sour | — | ⛔ quarantined | 2 stale Elements exist |
+| Granny Smith Fireball | — | ⛔ quarantined | 2 stale Elements exist |
+| Mai Tai | — | ⛔ quarantined | 3 stale Elements exist |
+| Aussie Berry Bliss | — | ⛔ quarantined | 2 stale Elements exist |
+| Piña Colada | — | ⛔ quarantined | |
+| Fabulous AF Cosmo | — | ⛔ quarantined | Shopify title rename still pending |
+| Shiso Sour | — | ⛔ quarantined | |
+| Tommy's Margarita | — | ⛔ quarantined | |
+| Elderflower Gin Gimlet | — | ⛔ quarantined | |
+
+### Stale Elements — do not use any of these
+
+19–20 Jun 2026: `mxt-pornstar-martini-pouch`, `mxt-espresso-martini-pouch`,
+`mxt-tommys-margarita-pouch`, `mxt-elderflower-gimlet-pouch`,
+`mxt-amaretto-whisky-sour-pouch`, `mxt-mai-tai-pouch`,
+`mxt-granny-fireball-pouch`, `mxt-aussie-berry-bliss-pouch`,
+`mxt-pina-colada-pouch`, `mxt-fabulous-af-cosmo-pouch`, `mxt-shiso-sour-pouch`,
+`mxt-pornstar-martini-v2`, `mxt-aussie-berry-bliss-v2`, `mxt-mai-tai-v2`,
+`mxt-mai-tai-v3`.
+3 Jul 2026: `mxt-pornstar-pouch`, `mxt-amaretto-pouch`, `mxt-espresso-pouch`,
+`mxt-fireball-pouch`.
+
+The Higgsfield MCP exposes only `list` / `get` / `create` — it **cannot rename
+or delete**. These 19 can only be removed by the founder in the Higgsfield UI.
+Until they are, this file is the sole guard against picking one.
+
+## Rebuild procedure
+
+For each flavour, in this order:
+
+1. Take the current pouch image from the **Shopify product record** (the store is
+   the upstream source of truth for live artwork) or from founder-supplied files
+   if the founder confirms those supersede Shopify.
+2. `media_upload` → PUT the bytes → `media_confirm`.
+3. `show_reference_elements` action=`create` with the returned `media_id`.
+   Name it `mxt-<flavour>-YYYYMM` so the generation is legible from the name.
+4. Record the new UUID **and its source image URL** in the table above, set
+   status to `approved`, and commit.
+
+Provenance is the point. A row without a source URL is not approved, however
+new it looks.
+
+## Reconciliation
+
+- **Every Friday review:** list live Elements, diff against this table. Report
+  any approved UUID that has vanished, and any live Element not recorded here.
+- **On any founder artwork change:** quarantine every affected flavour in this
+  file *first*, then rebuild. Quarantine before rebuild, never after.

@@ -4,16 +4,24 @@ Every deliverable is checked against these before it appears in a report as "don
 
 ## Hard facts — check these before any copy or creative ships
 - **Free shipping threshold is $60** (not $66). Matches the store product pages.
-- **Pouch artwork rules live in Higgsfield as saved Elements** (`show_reference_elements`),
-  one per flavour, e.g. `mxt-pina-colada-pouch`, `mxt-fabulous-af-cosmo-pouch`.
-  Each carries the full spec: rectangular foil stand-up pouch, flat bottom seal,
-  never glass-shaped, glossy black left panel with the iridescent rainbow
-  MXT OLOGY wordmark, flavour name on the right panel, Y-shaped window with a
-  flavour-specific liquid colour, white screw cap upper-left.
-  **Always generate pouch imagery via these Elements** — embed `<<<element_id>>>`
-  in the prompt. Elements are only supported on `nano_banana_2`,
-  `nano_banana_flash`, `gpt_image_2`, `seedream_v4_5`, `seedream_v5_lite` and
-  `cinematic_studio_2_5` — NOT on `marketing_studio_image`, which invents labels.
+- **Pouch artwork: `POUCH-ELEMENTS.md` is the ONLY authority.** Never pick a
+  Higgsfield Element by name, by description, or by how recent it looks — match
+  the **UUID** in that file and check its status is `approved`. Element names
+  collide across generations (three different "pornstar" Elements exist) and
+  `created_at` does not tell you which label generation an Element depicts.
+  **Inferring "newest = current" from a timestamp caused a real failure on
+  2026-08-10** — creative shipped on superseded labels. Run the preflight in
+  `POUCH-ELEMENTS.md` before every generation; if a flavour is quarantined or
+  absent, stop and ask. Never substitute, never fall back to an older Element,
+  never describe the pouch in prose instead.
+  Each approved Element carries the full spec: rectangular foil stand-up pouch,
+  flat bottom seal, never glass-shaped, glossy black left panel with the
+  iridescent rainbow MXT OLOGY wordmark, flavour name on the right panel,
+  Y-shaped window with a flavour-specific liquid colour, white screw cap
+  upper-left. Embed `<<<element_id>>>` in the prompt. Elements are only
+  supported on `nano_banana_2`, `nano_banana_flash`, `gpt_image_2`,
+  `seedream_v4_5`, `seedream_v5_lite` and `cinematic_studio_2_5` — NOT on
+  `marketing_studio_image`, which invents labels.
 - Product photography on Shopify is current (re-shot late July 2026).
 
 ## All content
