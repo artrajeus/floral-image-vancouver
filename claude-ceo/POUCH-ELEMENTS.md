@@ -18,6 +18,22 @@ Before generating any pouch image:
    Never substitute a different flavour, never fall back to an older Element,
    never generate the pouch from a text description instead.
 
+## Canonical source resolved (2026-08-13)
+
+**Shopify product media IS the current artwork.** Verified by eye, not by
+timestamp: the Shopify `mxt-glow-*` studio shots and `espresso-martini-*.jpg`
+match the founder's 2026-08-04 reference photos exactly — gradient **M** monogram
+with horizontal "MXTOLOGY" beneath it, and a full-bleed illustrated artwork panel
+per flavour carrying the flavour name vertically in white.
+
+The 19 legacy Elements describe a *different* design (vertical iridescent
+"MXT OLOGY" wordmark, plain colour right panel, no illustration). They are
+superseded, not merely old. My earlier note that Shopify "may itself be a
+generation behind" was wrong and is withdrawn.
+
+**Rebuild source:** `https://cdn.shopify.com/s/files/1/0553/8145/8978/files/mxt-glow-<flavour>.jpg`
+(no `mxt-glow-` asset exists for Espresso Martini; use `espresso-martini-5692062.jpg`.)
+
 ## Status: ALL ELEMENTS QUARANTINED (2026-08-10)
 
 Every Element in the workspace was created **2026-06-19/20** or **2026-07-03**.
@@ -32,16 +48,16 @@ the 2026-08-10 kickoff — uses superseded artwork and must not be published.
 
 | Flavour | Approved UUID | Status | Notes |
 |---|---|---|---|
-| Pornstar Martini | — | ⛔ quarantined | 3 stale Elements exist, none current |
-| Espresso Martini | — | ⛔ quarantined | 2 stale Elements exist |
-| Amaretto Whisky Sour | — | ⛔ quarantined | 2 stale Elements exist |
-| Granny Smith Fireball | — | ⛔ quarantined | 2 stale Elements exist |
+| Pornstar Martini | `049e6b43-ed4c-44eb-b047-9ad95ded41af` | ✅ **approved** | `mxt-pornstar-CURRENT-202608` · source `mxt-glow-pornstar-martini.jpg` · built 2026-08-13 |
+| Tommy's Margarita | `0beecfb3-8141-42d3-8e85-eaf091bb1fcd` | ✅ **approved** | `mxt-margarita-CURRENT-202608` · source `mxt-glow-tommys-margarita.jpg` · built 2026-08-13 |
+| Aussie Berry Bliss | — | ⏳ media uploaded | media_input `39d47a8e-5e37-4c9b-8075-553a7d331459`, Element not yet created |
+| Espresso Martini | — | ⛔ quarantined | no `mxt-glow-` asset; use `espresso-martini-5692062.jpg` |
+| Amaretto Whisky Sour | — | ⛔ quarantined | |
+| Granny Smith Fireball | — | ⛔ quarantined | |
 | Mai Tai | — | ⛔ quarantined | 3 stale Elements exist |
-| Aussie Berry Bliss | — | ⛔ quarantined | 2 stale Elements exist |
 | Piña Colada | — | ⛔ quarantined | |
 | Fabulous AF Cosmo | — | ⛔ quarantined | Shopify title rename still pending |
 | Shiso Sour | — | ⛔ quarantined | |
-| Tommy's Margarita | — | ⛔ quarantined | |
 | Elderflower Gin Gimlet | — | ⛔ quarantined | |
 
 ### Stale Elements — do not use any of these
