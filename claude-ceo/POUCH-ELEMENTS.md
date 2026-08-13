@@ -53,8 +53,8 @@ the 2026-08-10 kickoff — uses superseded artwork and must not be published.
 | Aussie Berry Bliss | `4660d157-ae54-4f78-bb18-73158c23216d` | ✅ **approved** | `mxt-berry-CURRENT-202608` · source `mxt-glow-aussie-berry-bliss.jpg` |
 | Amaretto Whisky Sour | `aa8f8e8b-b01b-4946-95a4-76ad5b4dcf6d` | ✅ **approved** | `mxt-amaretto-CURRENT-202608` · source `mxt-glow-amaretto-whisky-sour.jpg` |
 | Granny Smith Fireball | `b9473bf5-9183-4582-a75b-2c7e1f507690` | ✅ **approved** | `mxt-fireball-CURRENT-202608` · source `mxt-glow-granny-smith-fireball.jpg` |
-| Mai Tai | — | ⏳ media imported | `10575e0a-0d31-4c75-af20-40a7ba5f3059` |
-| Fabulous AF Cosmo | — | ⏳ media imported | `4822c527-4148-4899-92ce-326213e4c3a8` · Shopify title rename still pending |
+| Mai Tai | `f981a19d-1e9b-409b-ab82-5dac2578dac6` | ✅ **approved** | `mxt-maitai-CURRENT-202608` · source `mxt-glow-mai-tai.jpg` |
+| Fabulous AF Cosmo | `bed44330-1fd6-4896-a120-d41feb4f14f0` | ✅ **approved** | `mxt-cosmo-CURRENT-202608` · source `mxt-glow-fabulous-af-cosmo.jpg` · Shopify title rename still pending |
 | Shiso Sour | — | ⏳ media imported | `0eab24a6-4d33-4186-93b3-4f8737d91f1c` |
 | Elderflower Gin Gimlet | — | ⏳ media imported | `48028790-cc46-4242-ab08-b4b04349df09` |
 | Espresso Martini | — | ⏳ media imported | `9b3d2104-af99-4239-963e-7beead1073fa` · no `mxt-glow-` asset; from `espresso-martini-5692062.jpg` |
