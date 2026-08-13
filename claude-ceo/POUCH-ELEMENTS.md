@@ -50,15 +50,15 @@ the 2026-08-10 kickoff — uses superseded artwork and must not be published.
 |---|---|---|---|
 | Pornstar Martini | `049e6b43-ed4c-44eb-b047-9ad95ded41af` | ✅ **approved** | `mxt-pornstar-CURRENT-202608` · source `mxt-glow-pornstar-martini.jpg` · built 2026-08-13 |
 | Tommy's Margarita | `0beecfb3-8141-42d3-8e85-eaf091bb1fcd` | ✅ **approved** | `mxt-margarita-CURRENT-202608` · source `mxt-glow-tommys-margarita.jpg` · built 2026-08-13 |
-| Aussie Berry Bliss | — | ⏳ media uploaded | media_input `39d47a8e-5e37-4c9b-8075-553a7d331459`, Element not yet created |
-| Espresso Martini | — | ⛔ quarantined | no `mxt-glow-` asset; use `espresso-martini-5692062.jpg` |
-| Amaretto Whisky Sour | — | ⛔ quarantined | |
-| Granny Smith Fireball | — | ⛔ quarantined | |
-| Mai Tai | — | ⛔ quarantined | 3 stale Elements exist |
-| Piña Colada | — | ⛔ quarantined | |
-| Fabulous AF Cosmo | — | ⛔ quarantined | Shopify title rename still pending |
-| Shiso Sour | — | ⛔ quarantined | |
-| Elderflower Gin Gimlet | — | ⛔ quarantined | |
+| Aussie Berry Bliss | `4660d157-ae54-4f78-bb18-73158c23216d` | ✅ **approved** | `mxt-berry-CURRENT-202608` · source `mxt-glow-aussie-berry-bliss.jpg` |
+| Amaretto Whisky Sour | `aa8f8e8b-b01b-4946-95a4-76ad5b4dcf6d` | ✅ **approved** | `mxt-amaretto-CURRENT-202608` · source `mxt-glow-amaretto-whisky-sour.jpg` |
+| Granny Smith Fireball | `b9473bf5-9183-4582-a75b-2c7e1f507690` | ✅ **approved** | `mxt-fireball-CURRENT-202608` · source `mxt-glow-granny-smith-fireball.jpg` |
+| Mai Tai | — | ⏳ media imported | `10575e0a-0d31-4c75-af20-40a7ba5f3059` |
+| Fabulous AF Cosmo | — | ⏳ media imported | `4822c527-4148-4899-92ce-326213e4c3a8` · Shopify title rename still pending |
+| Shiso Sour | — | ⏳ media imported | `0eab24a6-4d33-4186-93b3-4f8737d91f1c` |
+| Elderflower Gin Gimlet | — | ⏳ media imported | `48028790-cc46-4242-ab08-b4b04349df09` |
+| Espresso Martini | — | ⏳ media imported | `9b3d2104-af99-4239-963e-7beead1073fa` · no `mxt-glow-` asset; from `espresso-martini-5692062.jpg` |
+| Piña Colada | — | ⏳ media imported | `115db1db-7f74-487a-8b0a-63f4b0e94eaf` · no `mxt-glow-` asset; from `scene-pina-colada.webp` |
 
 ### Stale Elements — do not use any of these
 
