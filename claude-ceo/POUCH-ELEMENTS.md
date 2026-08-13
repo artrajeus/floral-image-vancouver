@@ -55,10 +55,17 @@ the 2026-08-10 kickoff — uses superseded artwork and must not be published.
 | Granny Smith Fireball | `b9473bf5-9183-4582-a75b-2c7e1f507690` | ✅ **approved** | `mxt-fireball-CURRENT-202608` · source `mxt-glow-granny-smith-fireball.jpg` |
 | Mai Tai | `f981a19d-1e9b-409b-ab82-5dac2578dac6` | ✅ **approved** | `mxt-maitai-CURRENT-202608` · source `mxt-glow-mai-tai.jpg` |
 | Fabulous AF Cosmo | `bed44330-1fd6-4896-a120-d41feb4f14f0` | ✅ **approved** | `mxt-cosmo-CURRENT-202608` · source `mxt-glow-fabulous-af-cosmo.jpg` · Shopify title rename still pending |
-| Shiso Sour | — | ⏳ media imported | `0eab24a6-4d33-4186-93b3-4f8737d91f1c` |
-| Elderflower Gin Gimlet | — | ⏳ media imported | `48028790-cc46-4242-ab08-b4b04349df09` |
-| Espresso Martini | — | ⏳ media imported | `9b3d2104-af99-4239-963e-7beead1073fa` · no `mxt-glow-` asset; from `espresso-martini-5692062.jpg` |
-| Piña Colada | — | ⏳ media imported | `115db1db-7f74-487a-8b0a-63f4b0e94eaf` · no `mxt-glow-` asset; from `scene-pina-colada.webp` |
+| Shiso Sour | `8b0a225a-a278-4a94-befd-a50a89c49754` | ✅ **approved** | `mxt-shiso-CURRENT-202608` · source `mxt-glow-shiso-sour.jpg` |
+| Elderflower Gin Gimlet | `b2fa3fbb-a4c9-4c6d-802e-ffc03156fc25` | ✅ **approved** | `mxt-gimlet-CURRENT-202608` · source `mxt-glow-elderflower-gin-gimlet.jpg` |
+| Espresso Martini | `607b7da6-a1e6-4e3d-a805-f4f2366b946f` | ✅ **approved** | `mxt-espresso-CURRENT-202608` · source `espresso-martini-5692062.jpg` (bar scene — no `mxt-glow-` asset exists) |
+| Piña Colada | `e672b03a-a71c-4ee5-ada7-19330621263c` | ✅ **approved** | `mxt-pina-CURRENT-202608` · source `scene-pina-colada.webp` (beach scene — no `mxt-glow-` asset exists) |
+
+**All 11 flavours are now approved.** Two of them (Espresso Martini, Piña Colada)
+were built from lifestyle scene photographs rather than clean studio shots
+because Shopify carries no `mxt-glow-` asset for them — their Element
+descriptions instruct the model to use only the pouch and ignore the
+surrounding scene. If either renders poorly, shoot a studio `mxt-glow-` frame
+for it and rebuild.
 
 ### Stale Elements — do not use any of these
 
