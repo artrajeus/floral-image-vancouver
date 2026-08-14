@@ -32,6 +32,19 @@ Every deliverable is checked against these before it appears in a report as "don
   prices, or dates.
 - Correct links checked, correct spelling of MXTology.
 
+## Generated pouch imagery — composition rule (added 2026-08-13)
+Evidence from 7 generations: **single pouch, upright or held in hand → 5/5 passed.**
+Two compositions fail reliably and must not be attempted:
+- **Pouch lying on its side** — the model rotates the artwork with it, so the
+  wordmark and flavour name render mirrored/upside-down and the foil loses its
+  black.
+- **Multiple pouches in a scene** — text garbles (`MXTOLDGY`, `TOOHMYS
+  MARGARIFA`) and third-party props hallucinate in. One attempt put a real
+  competitor dairy brand and a retired, racially-loaded cheese brand in frame.
+**Always eyeball every generated image against the real label before it leaves
+the session.** Check: MXTOLOGY spelled correctly, flavour name correct and
+right-way-up, gradient M monogram present, no third-party trademarks in shot.
+
 ## Meta ads
 - Hook in the first line; primary text ≤125 chars where possible for the headline.
 - Audience and objective stated with the draft.
