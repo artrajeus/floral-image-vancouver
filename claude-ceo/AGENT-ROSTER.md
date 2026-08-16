@@ -46,19 +46,37 @@ CEO orchestrates.
 (founder decision 2026-07-30) — do not triage or report on
 artrajeus@gmail.com or artraje@hotmail.com.
 
-**Mailbox coverage (verified 2026-07-30) — this is NOT "all inboxes":**
+**Mailbox coverage — CORRECTED 2026-08-17. The 2026-07-30 table was wrong on
+the most basic fact and is superseded.**
+
+The connected Gmail account is **artrajeus@gmail.com**, not aussiefloat@gmail.com.
+Evidence: every `SENT`-labelled message returned by the connector has
+`sender: artrajeus@gmail.com`, and `in:inbox` returns mail addressed to
+artrajeus@gmail.com. This matters because the standing rule excludes
+artrajeus@gmail.com as personal — so a bare `in:inbox` triage was excluding the
+entire connected mailbox and reporting the result as a quiet day.
 
 | Business mailbox | Covered? | Via |
 |---|---|---|
-| aussiefloat@gmail.com | ✅ yes | Gmail connector is authenticated as this account |
+| artrajeus@gmail.com | ✅ connected, but **out of triage scope by founder rule** | Gmail connector is authenticated as this account |
 | Vancouver@floralimage.com | ✅ yes | Microsoft 365 connector (`get_me` confirms) |
-| aaron@mxtology.com.au | ⏳ pending forward | neither connector can reach it directly (Microsoft returns ErrorInvalidUser; Gmail is aussiefloat-only). Arrives once forwarding is on, labelled `MXTology/Aaron` |
-| mxtologycocktails@gmail.com | ⏳ pending forward | same — arrives labelled `MXTology/Cocktails` |
+| aussiefloat@gmail.com | ❓ unverified | search `to:aussiefloat@gmail.com`; returned nothing in the last 2 days, so coverage is unproven, not confirmed |
+| aaron@mxtology.com.au | ⏳ pending forward | not reachable directly (Microsoft returns ErrorInvalidUser) |
+| mxtologycocktails@gmail.com | ⏳ pending forward | same |
 
-**Routing (labels already created in aussiefloat@gmail.com):**
-- `MXTology` (Label_46) — parent, catches all MXTology mail
-- `MXTology/Aaron (aaron@mxtology.com.au)` (Label_47)
-- `MXTology/Cocktails (mxtologycocktails@gmail.com)` (Label_48)
+**This needs a founder decision.** The mailbox the founder actually works out of
+is artrajeus@gmail.com, and it is the one he wants taken to inbox zero — but the
+2026-07-30 rule puts it out of scope. Either the rule narrows to *personal
+threads within* that mailbox, or the inbox agent has almost nothing to triage.
+
+**Label routing — corrected:**
+- `MXTology` = `Label_5869056844117415831` (201 threads). Search it as
+  `label:MXTology`.
+- `Label_46` / `Label_47` / `Label_48` in the old table are **not** MXTology
+  labels — they are `Business/Postcards For Change/{Templates,Website,logins}`.
+- No `MXTology/Aaron` or `MXTology/Cocktails` sub-labels exist yet.
+- **`label:<ID>` search syntax silently returns empty in this connector.**
+  Always search by display name.
 
 Founder setup required once, per forwarded account: turn on auto-forward to
 aussiefloat@gmail.com; add a filter applying the matching label (**do not tick

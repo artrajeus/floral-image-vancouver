@@ -16,12 +16,29 @@ October, reports land an hour later on the clock until the crons are nudged.
    report it. See the coverage table in `AGENT-ROSTER.md`, **name the mailboxes
    actually scanned**, and never write "all inboxes".
 
+   **Search syntax — corrected 2026-08-17. Read this before running the triage.**
+   `label:<ID>` **does not work** in this Gmail connector: it returns an empty
+   result silently instead of erroring, so it reads as "quiet day" when it is
+   actually a broken query. Verified against `Label_774` ("1: To respond", 351
+   threads, mail from that same day) — returned nothing. **Always search by
+   display name: `label:MXTology`.** Confirm any label name against
+   `list_labels` before relying on it.
+
+   The old spec's `Label_46` was wrong as well — in this account that ID is
+   `Business/Postcards For Change/Templates`, unrelated to MXTology. The
+   MXTology label is `Label_5869056844117415831`, display name `MXTology`.
+   Every "MXTology returned nothing" reported before 2026-08-17 was a false
+   negative on both counts and must not be cited as evidence about forwarding.
+
    Run these searches:
-   - `label:Label_46 newer_than:1d` — MXTology mail forwarded from
-     aaron@mxtology.com.au and mxtologycocktails@gmail.com. **Report MXTology
-     first** — it is revenue priority #1. If this returns nothing, check whether
-     forwarding is live before assuming a quiet day, and say so.
-   - `in:inbox newer_than:1d -label:Label_46` — Aussie Floats.
+   - `label:MXTology newer_than:1d` — MXTology mail. **Report MXTology first**
+     — it is revenue priority #1. If this returns nothing, re-run without the
+     date filter to confirm the label resolves at all before calling it a quiet
+     day, and say which check you ran.
+   - `to:aussiefloat@gmail.com newer_than:1d` — Aussie Floats. Do **not** use
+     `in:inbox` for this: the connected Gmail account is artrajeus@gmail.com
+     (see AGENT-ROSTER.md), so a bare inbox search returns the founder's
+     personal mail, which is out of scope.
    - Outlook search, last 24h — Floral Image (Vancouver@floralimage.com).
 
    Then: list emails needing the founder's reply, most important first, one line
