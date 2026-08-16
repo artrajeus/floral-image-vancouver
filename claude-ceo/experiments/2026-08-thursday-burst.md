@@ -156,7 +156,8 @@ This is the same shape as Mundi Mundi, which forced pair 1 to be dropped. Runnin
 burst 2 on Thu 20 Aug as scheduled would leave **zero clean pairs out of three**
 and the experiment unanswerable at full cost.
 
-**Recommended (founder decision required): slip the alternation by one week.**
+**APPROVED BY FOUNDER 2026-08-17: burst 2 slips to Thursday 27 August.**
+w/c 2026-08-17 is now a no-burst week. The schedule below is the live schedule.
 
 | Week starting (Mon) | Condition | Burst day |
 |---|---|---|
@@ -171,7 +172,7 @@ final read moves to late September. **The Windsor trial expires ~2026-09-03 and
 must be renewed regardless** — under the slipped schedule it is load-bearing for
 the back half of the data, not optional.
 
-Alternative if the founder wants to hold the date: run Thu 20 Aug and read burst 2
+*(Not taken)* Alternative if the founder wants to hold the date: run Thu 20 Aug and read burst 2
 on direct/mechanism metrics only (CPM, CPC, CTR, campaign-id-attributed sessions,
 post-burst retargeting lift), abandoning the weekly-aggregate rule entirely. That
 is defensible — campaign-separable metrics survive contamination — but it changes
