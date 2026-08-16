@@ -122,6 +122,67 @@ not be credited to the burst.
   (`social/facebook`) or from Meta itself. Measurement item 3 above overstates
   what the tooling can deliver.
 
+## Scorecard — Week 2 (control), w/c 2026-08-10
+
+Recorded 2026-08-17 06:00 ACST, full week complete.
+
+| Measure | Control wk (10–16 Aug) | Burst wk (3–9 Aug) |
+|---|---|---|
+| Shopify total sales | $6,213.34 | $7,600.94 |
+| Orders | 44 | 59 |
+| AOV | $141.21 | $128.83 |
+| Meta spend | $1,700.12 | $1,891.43 |
+| Blended ROAS | 3.65× | 4.02× |
+| Meta-attributed revenue | $4,610.25 | $6,922.97 |
+
+**These two weeks are not comparable and the difference must not be read as a
+burst effect.** Pair 1 was dropped on 2026-08-10 because Mundi Mundi ran across
+both sides. This table is recorded for the business scorecard only.
+
+## PAIR 2 IS ABOUT TO REPEAT THE PAIR-1 FAILURE (found 2026-08-17)
+
+`MXT_Muster_2026_Conversions` (campaign `120257582631120197`, ad set
+`Muster_Interests_QLD_NthNSW` / `120257582642200197`) is `ACTIVE` with
+**`adset_end_time` = 2026-08-21T14:00:00+0800 = Fri 21 Aug 16:00 ACST.**
+
+That places it Mon 17 – Fri 21 August: **entirely inside burst week 2, and not at
+all inside control week 2 (24–30 Aug).** It is a deadline-driven festival
+campaign scaling hard — $0.47 → $131.01 → $189.97 across its first three days, at
+8.3–10.9% CTR — so it will likely add $800–1,000 of spend and a revenue spike to
+the burst week alone. The burst itself is A$80–100. The confounder is an order of
+magnitude larger than the signal.
+
+This is the same shape as Mundi Mundi, which forced pair 1 to be dropped. Running
+burst 2 on Thu 20 Aug as scheduled would leave **zero clean pairs out of three**
+and the experiment unanswerable at full cost.
+
+**Recommended (founder decision required): slip the alternation by one week.**
+
+| Week starting (Mon) | Condition | Burst day |
+|---|---|---|
+| 2026-08-17 | *(skipped — Muster running)* | — |
+| 2026-08-24 | **BURST** | Thu 2026-08-27 |
+| 2026-08-31 | control | — |
+| 2026-09-07 | **BURST** | Thu 2026-09-03 → moved to Thu 2026-09-10 |
+| 2026-09-14 | control | — |
+
+Muster ends 21 Aug, so 24 Aug onwards is clean. Cost: one week of delay, and the
+final read moves to late September. **The Windsor trial expires ~2026-09-03 and
+must be renewed regardless** — under the slipped schedule it is load-bearing for
+the back half of the data, not optional.
+
+Alternative if the founder wants to hold the date: run Thu 20 Aug and read burst 2
+on direct/mechanism metrics only (CPM, CPC, CTR, campaign-id-attributed sessions,
+post-burst retargeting lift), abandoning the weekly-aggregate rule entirely. That
+is defensible — campaign-separable metrics survive contamination — but it changes
+the experiment's decision rule mid-flight and should be recorded as such.
+
+**Standing lesson, now twice observed:** this account runs deadline-driven
+festival campaigns on the founder's own outreach calendar, and those are the
+business's real revenue driver. Weekly-aggregate A/B design is structurally
+fragile here. Any future test should be designed on campaign-separable metrics
+from the start.
+
 ## Log
 
 - **Burst 1 built and staged 2026-08-04.** Meta campaign `120257261774290197`,
