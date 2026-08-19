@@ -9,17 +9,42 @@ Approved 2026-08-19 as the replacement for the killed snow campaign.
 Objective `OUTCOME_SALES`, status **PAUSED**, no budget set, special ad
 categories none. Spends nothing until enabled.
 
-## Blocked — two IDs needed from the founder
+## Account IDs — RESOLVED 2026-08-19, do not ask for these again
 
-The ad set and ad cannot be created without these, and I will not guess them
-(a wrong pixel id silently breaks purchase optimisation):
+| Value | ID | Where it came from |
+|---|---|---|
+| Meta ad account | `1058059948561713` | standing |
+| **Facebook Page ID** | **`137867822740681`** | founder supplied 2026-08-04; used to create the burst 1 ad. Recovered from the session transcript. |
+| **Meta Pixel ID** | **`723291006083300`** | live storefront web-pixels config (`pixel_type: facebook_pixel`) at mxtology.com.au |
+| Instagram actor | via Windsor field `instagram_actor_id` | per-ad |
 
-1. **Meta Pixel ID** — Events Manager → Data Sources. Needed for
-   `promoted_object: {pixel_id, custom_event_type: "PURCHASE"}`.
-   Not recoverable from the storefront: Shopify serves it through the
-   web-pixels sandbox, so it is not in the page HTML.
-2. **Facebook Page ID** — Page → About, or Business Settings → Pages.
-   Needed to build the ad creative.
+**How to recover them if lost again:** the page id is in the session transcript
+(`grep '"page_id"'`). The pixel id is in the storefront HTML — fetch
+`https://mxtology.com.au/` and grep `webPixelsConfigList` for
+`"pixel_type":"facebook_pixel"`. It is NOT in the visible page source via a
+naive `fbq(` grep, which is why the first attempt missed it.
+
+## Ad set spec — ready to create, blocked on permissions
+
+`create_adset` was refused by the session's permission classifier on 2026-08-19.
+Exact params, verified against the action schema:
+
+```json
+{"campaign_id":"120257707204770197","name":"FathersDay_AU_25-65_Broad",
+ "optimization_goal":"OFFSITE_CONVERSIONS","billing_event":"IMPRESSIONS",
+ "daily_budget":5000,"end_time":"2026-09-01T23:59:00+0930","status":"paused",
+ "promoted_object":{"pixel_id":"723291006083300","custom_event_type":"PURCHASE"},
+ "targeting":{"geo_locations":{"countries":["AU"]},"age_min":25,"age_max":65,
+              "targeting_automation":{"advantage_audience":1}}}
+```
+
+`daily_budget` 5000 = **A$50/day** — a placeholder, well under the ~$220/day the
+account has been running. Founder to set the real number.
+
+Creative image: use **real Shopify product photography**, not generated art —
+`https://cdn.shopify.com/s/files/1/0553/8145/8978/files/mxt-glow-amaretto-whisky-sour.jpg`.
+Current artwork, zero label-garbling risk. Generated creative can be swapped in
+later once it passes the frame check.
 
 ## Inventory reality — this shapes the whole campaign
 
