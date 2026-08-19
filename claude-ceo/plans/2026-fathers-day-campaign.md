@@ -24,27 +24,35 @@ categories none. Spends nothing until enabled.
 `"pixel_type":"facebook_pixel"`. It is NOT in the visible page source via a
 naive `fbq(` grep, which is why the first attempt missed it.
 
-## Ad set spec — ready to create, blocked on permissions
+## BUILT 2026-08-19 — all paused, zero spend
 
-`create_adset` was refused by the session's permission classifier on 2026-08-19.
-Exact params, verified against the action schema:
+| Object | ID | State |
+|---|---|---|
+| Campaign `MXT_FathersDay_2026_Conversions` | `120257707204770197` | PAUSED · OUTCOME_SALES · CBO daily **A$50** · `LOWEST_COST_WITHOUT_CAP` |
+| Ad set `FathersDay_AU_25-65_Broad` | `120257711507220197` | PAUSED · OFFSITE_CONVERSIONS/PURCHASE on pixel `723291006083300` · AU 25–65 broad + Advantage · ends **1 Sept 23:59 ACST** |
+| Ad A — Skip the socks | `120257711514440197` | PAUSED |
+| Ad B — Disaronno / Maker's / fresh lemon | `120257711522650197` | PAUSED |
+| Ad C — He doesn't want another mug | `120257711526120197` | PAUSED |
 
-```json
-{"campaign_id":"120257707204770197","name":"FathersDay_AU_25-65_Broad",
- "optimization_goal":"OFFSITE_CONVERSIONS","billing_event":"IMPRESSIONS",
- "daily_budget":5000,"end_time":"2026-09-01T23:59:00+0930","status":"paused",
- "promoted_object":{"pixel_id":"723291006083300","custom_event_type":"PURCHASE"},
- "targeting":{"geo_locations":{"countries":["AU"]},"age_min":25,"age_max":65,
-              "targeting_automation":{"advantage_audience":1}}}
-```
+All three point at `/pages/build-your-case` with
+`utm_source=facebook&utm_medium=paid&utm_campaign=fathersday-2026` plus a
+per-ad `utm_content`.
 
-`daily_budget` 5000 = **A$50/day** — a placeholder, well under the ~$220/day the
-account has been running. Founder to set the real number.
+**Build gotcha, same as burst 1:** the account default demands a bid cap, so
+`create_adset` 400s with *"Bid amount or bid constraints required for bid
+strategy"*. Fix is a three-step order — `set_campaign_budget` first (bid strategy
+cannot be set on a budget-less campaign), then `update_campaign`
+`bid_strategy=LOWEST_COST_WITHOUT_CAP`, then `create_adset` with no ad set
+budget (CBO carries it). Record this; it has now cost two builds.
 
-Creative image: use **real Shopify product photography**, not generated art —
-`https://cdn.shopify.com/s/files/1/0553/8145/8978/files/mxt-glow-amaretto-whisky-sour.jpg`.
-Current artwork, zero label-garbling risk. Generated creative can be swapped in
-later once it passes the frame check.
+**Creative:** real Shopify product photography, not generated art —
+`mxt-glow-amaretto-whisky-sour.jpg` (A, B) and `espresso-martini-5692062.jpg`
+(C). Both verified HTTP 200 image/jpeg before use. Note `mxt-glow-espresso-martini.jpg`
+does **not** exist (404) — consistent with `POUCH-ELEMENTS.md`. Zero label-garbling
+risk versus generated pouches.
+
+**Windsor returns no rows for this campaign** — expected, paused campaigns
+produce no insights. Verify in Ads Manager, not Windsor.
 
 ## Inventory reality — this shapes the whole campaign
 
