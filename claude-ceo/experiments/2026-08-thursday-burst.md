@@ -184,6 +184,47 @@ business's real revenue driver. Weekly-aggregate A/B design is structurally
 fragile here. Any future test should be designed on campaign-separable metrics
 from the start.
 
+## Week 3 (w/c 2026-08-17) — SKIPPED, not a study week
+
+Recorded Fri 2026-08-21 15:10 ACST. Founder approved the one-week slip on
+2026-08-17, so this week carries **no burst and is not a control** — it is
+excluded from the design entirely. The live schedule is: BURST Thu 27 Aug,
+control w/c 31 Aug, BURST Thu 10 Sep, control w/c 14 Sep.
+
+Business numbers for the record (Mon–Fri, Fri partial at time of writing):
+
+| Measure | This week (17–21 Aug) | Prior week (10–14 Aug) |
+|---|---|---|
+| Shopify revenue | $2,154.97 | $4,447.97 |
+| Orders | 20 | 29 |
+| AOV | $107.75 | $153.38 |
+| Meta spend | $853.07 | $1,268.58 |
+| Meta-attributed revenue | $1,425.97 | $3,264.97 |
+| Meta ROAS | 1.67× | 2.57× |
+| Meta CPA | $85.31 | $57.66 |
+| **Blended ROAS** | **2.53×** | **3.51×** |
+
+Revenue down 51.5% week on week on 31% fewer orders.
+
+**Confounders this week**
+- `MXT_Muster_2026_Conversions` ran Mon–Fri: **$637.43 spend, $1,295 attributed,
+  2.03×**. It ends **Fri 21 Aug 16:00 ACST**. Its absence from next week is
+  itself a step change to note when reading the 27 Aug burst.
+- `#3 - MOF` spent **$0 all week** (last spend 13 Aug). The account's historic
+  workhorse is gone, so week-on-week comparisons now span two different account
+  structures.
+- `Snow Season 2026 — Espresso Martini — Seed` ran 2.5h on 17 Aug ($1.02) and was
+  killed on 19 Aug — negligible, but logged.
+- **A new always-on prospecting campaign (`MXT_FathersDay_2026_Conversions`,
+  `120257707204770197`) is built and paused.** If it launches before Thu 27 Aug it
+  contaminates the burst week. Founder accepted that trade on 2026-08-19; record
+  it against pair 2 when the burst is read.
+
+**Element reconciliation (Friday step 2a): clean.** All 11 approved UUIDs in
+`POUCH-ELEMENTS.md` are live and `completed`. The 19 stale Elements are still
+present and still unremoved — unchanged from the manifest, no new unrecorded
+Elements.
+
 ## Log
 
 - **Burst 1 built and staged 2026-08-04.** Meta campaign `120257261774290197`,
