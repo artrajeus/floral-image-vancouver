@@ -284,3 +284,42 @@ Elements.
   orders. Note: Windsor trial expires ~2026-09-03, around week 4 — renew or move
   to Basic before then or the back half of the data is lost.
   Context: Canberra Uni gig (Reece Mastin) falls Fri 7 Aug, the day after.
+
+## RECOMMENDATION 2026-08-24: kill the experiment
+
+Written at the Monday kickoff. w/c 24 Aug is scheduled as burst week 2
+(Thu 27 Aug). **I recommend not running it and closing the experiment out.**
+
+**No clean pair remains.**
+
+| Pair | Status |
+|---|---|
+| 1 — burst 03-08 vs control 10-08 | **Dropped 2026-08-10.** Mundi Mundi ran across both sides. |
+| 2 — burst 24-08 vs control 31-08 | **Cannot be clean.** Father's Day (Sun 6 Sep, order-by 1 Sep) has to launch this week — 13 days out — and it is a new always-on prospecting campaign. On top of that, Muster ended 21 Aug, so the two weeks span different account structures either way. |
+| 3 — burst 10-09 vs control 14-09 | **At risk.** The Windsor trial expires ~2026-09-03; without it there is no Meta spend/ROAS read for the back half. Father's Day traffic also runs into early September. |
+
+The file's own decision rule says confounded pairs must be discounted. All
+three are. An experiment that cannot answer its question should not keep
+consuming the week.
+
+**Cost of the answer so far: A$82.68** (burst 1, 6–7 Aug). Stopping now spends
+nothing further and is inside the ≤A$300 budget the rule allowed.
+
+**What burst 1 actually proved, and is worth keeping:** a traffic-objective
+campaign bought reach at **CPM $4.90** against $45.38 on `#3 - MOF` the same day
+— **9.3× cheaper** — at 2.52% CTR and $0.195 CPC, delivering 306 Shopify
+sessions for $72.21. That mechanism is real and reusable. What was never
+demonstrated is that cheap reach converts into full-week revenue.
+
+**Redeploy:** put the A$80–100 burst budget into
+`MXT_FathersDay_2026_Conversions` (`120257707204770197`), which is built, paused,
+and is the only prospecting campaign the account has. Revisit a seeding burst
+after Father's Day, measured on campaign-separable metrics rather than
+weekly aggregates — the structural lesson from all three pairs.
+
+**If the founder overrules and wants burst 2 run**, the package is drafted in
+the Monday kickoff of 2026-08-24: clone of campaign `120257261774290197`,
+Traffic objective, A$90 lifetime, broad AU 18+, all placements, Thu 27 Aug
+09:00 → Fri 28 Aug 09:00 ACST, destination `/pages/build-your-case`, no discount
+code (per the 2026-08-04 reversal), read by campaign id not by UTM slug (per the
+2026-08-07 correction).
