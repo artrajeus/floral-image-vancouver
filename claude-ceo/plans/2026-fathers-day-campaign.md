@@ -121,3 +121,26 @@ label before it leaves the session.
 - Conflict noted: burst 2 is Thu 27 Aug. This campaign runs through it and will
   contaminate pair 2 — accepted on 2026-08-19, since Muster ends 21 Aug and MOF
   has been at $0 since 14 Aug, leaving the account with no prospecting.
+
+## STATUS 2026-08-27 — day 8 paused, five days to the order-by
+
+Built 2026-08-19. Still PAUSED. A$0 spent. Meta data for 20–26 Aug shows only
+`MXTology – ATC Retargeting` and `MXT-TEST | Static Engine` running —
+`MXT_FathersDay_2026_Conversions` (`120257707204770197`) has never delivered an
+impression.
+
+**The clock:** Father's Day is Sun 6 Sept. Order-by for delivery is Mon 1 Sept.
+That is 5 days. A conversions campaign needs roughly 3 days to exit the learning
+phase, which means the useful window closes at the end of this week — after that
+the campaign can only be launched as a last-minute urgency play at lower
+efficiency, and after 1 Sept it cannot be launched at all.
+
+**Blocker:** budget. Under the standing rule the agent does not set or change ad
+spend. The campaign is fully built — CBO A$50/day, `LOWEST_COST_WITHOUT_CAP`,
+ends 1 Sept 23:59 ACST, three ads on real Shopify photography, destination
+`/pages/build-your-case`. It needs one word from the founder to go live.
+
+**Cost of the delay so far:** 8 days of a 13-day window. Meanwhile the account
+spent A$374.87 across 20–26 Aug on retargeting and the static test for
+A$961.97 in Meta-attributed value, with three of the last four days returning
+zero attributed revenue.

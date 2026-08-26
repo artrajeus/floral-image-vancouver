@@ -323,3 +323,28 @@ Traffic objective, A$90 lifetime, broad AU 18+, all placements, Thu 27 Aug
 09:00 → Fri 28 Aug 09:00 ACST, destination `/pages/build-your-case`, no discount
 code (per the 2026-08-04 reversal), read by campaign id not by UTM slug (per the
 2026-08-07 correction).
+
+## CLOSED 2026-08-27 — burst 2 did not launch
+
+Today was the approved burst day (founder approval 2026-08-17: "First one, yes,
+you can run it 27th of August"). It did not run, and no budget was changed.
+
+The 2026-08-24 recommendation to kill the experiment went unanswered through
+the 25th and 26th. Under the standing rule — never send, publish, or change ad
+spend without the founder — the absence of a ruling is not authority to spend,
+so nothing was launched. Recording that plainly rather than leaving the
+experiment nominally open.
+
+**Final state:** 1 of 3 pairs run, 0 clean pairs, A$82.68 of the A$300 budget
+spent. The experiment is closed as unanswerable. No further burst work is
+scheduled.
+
+**The one durable finding**, restated so it survives the file: a traffic-objective
+campaign bought reach at CPM A$4.90 against A$45.38 on `#3 - MOF` the same day —
+9.3× cheaper — at 2.52% CTR, A$0.195 CPC, 306 Shopify sessions for A$72.21.
+Cheap reach is real. That it converts to full-week revenue was never shown, and
+the weekly-aggregate readout is what made it unshowable. Any future seeding test
+must be measured on campaign-separable metrics.
+
+**Reversible:** if the founder wants burst 2 after all, the package is drafted in
+the 2026-08-24 kickoff and can run on any Thursday. Nothing has been deleted.
