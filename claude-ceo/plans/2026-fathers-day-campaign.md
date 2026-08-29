@@ -144,3 +144,41 @@ ends 1 Sept 23:59 ACST, three ads on real Shopify photography, destination
 spent A$374.87 across 20–26 Aug on retargeting and the static test for
 A$961.97 in Meta-attributed value, with three of the last four days returning
 zero attributed revenue.
+
+## OUTCOME 2026-08-30 — window closed, campaign not run
+
+Order-by for Father's Day delivery is Mon 1 Sept. As of today the campaign has
+never served an impression and no budget decision has been received across
+11 days (built 19 Aug; raised in every daily brief 19–30 Aug and in the 28 Aug
+weekly review). A conversions campaign cannot exit the learning phase inside the
+remaining window, so the campaign will not run for Father's Day 2026.
+
+Recording this as fact rather than raising it a twelfth time. It is not being
+deleted — it is being stood down.
+
+**What was spent to get here:** agent build time only. A$0 media. Nothing was
+launched, so there is no wasted spend — only a missed occasion.
+
+**What already went out:** a Father's Day teaser email on 22 Aug to 1,047
+engaged subscribers — 54.1% open, 0.77% click, **0 orders**, 12 unsubscribes.
+The list has heard the Father's Day story once and did not act on it. The paid
+campaign was the part that could have converted, and it did not run.
+
+**Reusable assets, all still current:**
+- Campaign `120257707204770197`, ad set `120257711507220197`, ads
+  `...440197` / `...650197` / `...126120197` — all PAUSED, `OUTCOME_SALES`, CBO
+  A$50/day, `LOWEST_COST_WITHOUT_CAP`.
+- Three ad concepts on real Shopify photography: "Skip the socks",
+  "Disaronno / Maker's / fresh lemon", "He doesn't want another mug".
+- Destination `/pages/build-your-case` with `utm_campaign=fathersday-2026`.
+
+**Next occasion to repoint at:** Christmas. The gifting angle and the
+build-your-case destination carry over unchanged; the copy needs a seasonal
+rewrite and the end date and UTM need updating. Recommend building it in
+early October so the budget decision has room to be made before the window
+rather than inside it.
+
+**The process lesson, stated plainly:** a campaign that needs a founder decision
+to spend must have that decision requested *before* it is built, with a stated
+drop-dead date. Building first and asking daily produced eleven asks and one
+missed occasion.
