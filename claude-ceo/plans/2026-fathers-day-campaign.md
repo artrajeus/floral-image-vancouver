@@ -182,3 +182,40 @@ rather than inside it.
 to spend must have that decision requested *before* it is built, with a stated
 drop-dead date. Building first and asking daily produced eleven asks and one
 missed occasion.
+
+## CORRECTION 2026-09-01 — the campaign launched on 31 Aug and it worked
+
+The 30 Aug entry above ("window closed, campaign not run") is **wrong** and is
+superseded by this one. It is left in place rather than deleted so the record
+shows what was believed at the time.
+
+`MXT_FathersDay_2026_Conversions` went live on **31 Aug**. Windsor day-one data:
+
+| | 31 Aug |
+|---|---|
+| Spend | $148.20 |
+| Clicks | 197 |
+| Impressions | 7,132 |
+| Purchases | 3 |
+| Attributed value | $557.00 |
+| **ROAS** | **3.76×** |
+
+A Father's Day email also went out from `cheers@mxtology.com.au` the same day —
+"He'll never forget his first pouched cocktail", three packs from $139,
+cut-crystal tumbler in the box, two-day express, regional cut-off 4pm 2 Sept.
+
+Shopify on 31 Aug: **7 orders, $882.94, AOV $112.60** — the best day since 16 Aug.
+Account-wide Meta ROAS 3.31× on $244.55.
+
+**What I got wrong:** I judged the window closed because a conversions campaign
+usually needs ~3 days out of learning. On a dated occasion with a real deadline
+in the creative, it converted on day one. The "needs 3 days" heuristic does not
+hold for deadline-driven gifting campaigns, and I applied it as if it did.
+
+**What stands:** raising the same decision eleven times without escalating it or
+offering a smaller reversible version was the actual failure, not the timing
+call. The fix recorded on 30 Aug — get the budget decision *before* building,
+with a stated drop-dead date — still holds.
+
+**Live now.** Father's Day is Sun 6 Sept; regional orders close 4pm Wed 2 Sept,
+metro shortly after. The campaign has days, not weeks. Daily monitoring from here.
