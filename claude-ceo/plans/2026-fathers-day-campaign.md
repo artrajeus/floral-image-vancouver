@@ -219,3 +219,51 @@ with a stated drop-dead date — still holds.
 
 **Live now.** Father's Day is Sun 6 Sept; regional orders close 4pm Wed 2 Sept,
 metro shortly after. The campaign has days, not weeks. Daily monitoring from here.
+
+## RESULT 2026-09-06 — campaign complete
+
+Father's Day is today. `MXT_FathersDay_2026_Conversions` ran 31 Aug – 5 Sept.
+
+| Date | Spend | Clicks | Purchases | Value | ROAS |
+|---|---|---|---|---|---|
+| 31 Aug | $148.86 | 197 | 3 | $557.00 | 3.76× |
+| 1 Sept | $222.56 | 304 | 3 | $417.00 | 1.87× |
+| 2 Sept | $121.67 | 206 | 5 | $742.97 | 6.11× |
+| 3 Sept | $46.89 | 32 | 2 | $218.97 | 4.67× |
+| 4 Sept | $84.59 | 25 | 3 | $537.00 | 6.35× |
+| 5 Sept | $101.02 | 84 | 3 | $458.00 | 4.53× |
+| **Total** | **$725.59** | **848** | **19** | **$2,930.94** | **4.04×** |
+
+**CPA $38.19.** Best campaign the account has run this year.
+
+### What the data says, for next time
+
+**1. Scaling hurt.** 1 Sept took budget up 49% over day one and revenue fell 25% —
+same three purchases, 107 more clicks. Every subsequent day spent *less* and
+returned *more*. The efficient range on this audience was roughly $85–$150/day.
+
+**2. The post-cut-off gift card outperformed the physical product.** After
+regional orders closed 4pm 2 Sept, spend dropped to $46–$101/day and ROAS ran
+4.53–6.35×. The "Bar Tab lands in his inbox" fallback converted better per dollar
+than the packs did. Saturday's Shopify total of $856 against a $163.65 AOV points
+to a large gift-card purchase in that mix (gift cards land in total sales but not
+net sales) — worth confirming in the order detail, but consistent with the pattern.
+
+**Carry this to Christmas:** run the physical offer to the delivery cut-off, then
+switch the same campaign to a digital gift card rather than turning it off. The
+tail was the most profitable part of the campaign.
+
+**3. Email worked when it had a deadline.** Four sends, $406.37 attributed, after
+six previous sends to 3,461 people returned $0. The variable was a real occasion
+with a real cut-off, not the copy.
+
+**4. `MXTology – ATC Retargeting` lost money across the same window** — $152.12
+spend, 2 purchases, $139.44, **0.92×**. It has now gone long stretches returning
+nothing while the Father's Day campaign carried the account. It needs a decision:
+refresh the audience and creative, or stop it.
+
+### The correction that matters
+The 30 Aug entry in this file said the window had closed and the campaign would
+not run. It ran the next day and returned 4.04×. The "conversions campaigns need
+three days out of learning" heuristic does not apply to a dated gifting campaign
+with a deadline in the creative. Do not apply it again.
