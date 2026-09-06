@@ -245,9 +245,11 @@ returned *more*. The efficient range on this audience was roughly $85–$150/day
 **2. The post-cut-off gift card outperformed the physical product.** After
 regional orders closed 4pm 2 Sept, spend dropped to $46–$101/day and ROAS ran
 4.53–6.35×. The "Bar Tab lands in his inbox" fallback converted better per dollar
-than the packs did. Saturday's Shopify total of $856 against a $163.65 AOV points
-to a large gift-card purchase in that mix (gift cards land in total sales but not
-net sales) — worth confirming in the order detail, but consistent with the pattern.
+than the packs did. (An earlier version of this entry read a large gift-card purchase into
+Saturday's Shopify total of $856 against a $163.65 AOV. **That was wrong.**
+5 September has since settled to $180.00 — the $856 was an unsettled same-day
+figure, not a gift-card effect. The ROAS pattern above stands on the Windsor
+data; the gift-card inference does not, and no gift-card mix has been verified.)
 
 **Carry this to Christmas:** run the physical offer to the delivery cut-off, then
 switch the same campaign to a digital gift card rather than turning it off. The
