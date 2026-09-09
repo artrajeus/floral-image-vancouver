@@ -46,6 +46,12 @@ Live store data (Shopify, as of 8 Aug 2026):
 
 ---
 
+### Stream C — "Regional Mainstream" (the gap I missed until 9 Sep 2026)
+- **Who:** 35–65, mixed country/rock/blues audience. Not outback-remote, not doof — regional camping festivals within driving range of a capital or major regional centre. Overlaps Stream A demographically but travels shorter distances and books later.
+- **Events:** Savannah in the Round, CMC Rocks QLD, Bluesfest Byron Bay, Party in the Paddock, Groundwater (no camping — see below).
+- **Why it was missed:** the calendar was built by searching the two poles in the original brief — "outback music festival" and "BYO camping EDM festival". This whole category sits between them and neither search reached it. **The fix: search by policy, not genre.** The qualifying mechanic is "BYO permitted in campground + glass banned" — that is the filter that should drive the calendar, regardless of what music is playing.
+- **Screening rule going forward:** an event only qualifies if it has (a) an on-site campground, (b) BYO allowed in that campground, (c) a glass ban. Groundwater Country Music Festival (16–18 Oct 2026, Broadbeach) is a free street festival with no camping — country audience, but our mechanic doesn't apply, so it is **not** a target. Caloundra Music Festival was permanently cancelled in 2025 — remove from consideration.
+
 ## 3. Annual event calendar (researched dates)
 
 Priority: ★★★ build a named pack + full campaign · ★★ ads + email, no dedicated SKU · ★ email-only / test
@@ -59,6 +65,7 @@ Priority: ★★★ build a named pack + full campaign · ★★ ads + email, no
 | **Birdsville Races** | 4–5 Sep | Birdsville QLD | A | Remote, glass-hostile | ★★ | 10 Aug → ~24 Aug (long travel lead) |
 | **Deni Ute Muster** | 2–3 Oct | Deniliquin NSW | A | Famously BYO | ★★★ | 24 Aug → ~25 Sep |
 | **Earth Frequency** | 23–26 Oct | QLD | B | BYO camping doof | ★★ | 14 Sep → ~16 Oct |
+| **Savannah in the Round** | **8–11 Oct** | **Mareeba QLD** | **C** | **BYO campground; glass-free precinct; no alcohol in arena** | **★★★ MISSED — build now** | **now → ~30 Sep** |
 | **Strawberry Fields** | 20–22 Nov | Tocumwal NSW | B | BYO camping | ★★★ | 5 Oct → ~13 Nov |
 | **Meredith Music Festival** | 11–13 Dec | Meredith VIC | B | BYO, no glass (iconic) | ★★★ | 26 Oct → ~4 Dec |
 | **Beyond the Valley** | 28 Dec–1 Jan | VIC | B | BYO: explicitly *non-glass* spirits/wine | ★★★ | 16 Nov → ~18 Dec (Xmas post cutoffs!) |
@@ -73,6 +80,9 @@ Priority: ★★★ build a named pack + full campaign · ★★ ads + email, no
 | **Golden Plains** | 6–8 Mar | Meredith VIC | B | ★★★ | 18 Jan → ~26 Feb |
 | **Esoteric Festival** | early Mar (TBC) | Donald VIC | B | ★★ | with Golden Plains |
 | **Rabbits Eat Lettuce** | 25–29 Mar (Easter) | QLD/NSW | B | ★★ | 8 Feb → ~17 Mar |
+| **CMC Rocks QLD** (20th anniversary) | 17–21 Mar 2027 | Willowbank QLD | C | ★★★ — Australia's biggest international country festival, campers-only Wed/Thu | 4 Jan → ~8 Mar |
+| **Bluesfest Byron Bay** | Easter 2027 | Tyagarah NSW | C | ★★ camping festival | ~6 wks out |
+| **Party in the Paddock** | Feb 2027 (TBC) | Carrick TAS | C | ★★ camping | ~6 wks out |
 | **Big Red Bash** | 6–8 Jul | Birdsville QLD | A | ★★★ (2026 cancelled → pent-up demand; same organiser & crowd as Mundi Mundi) | 10 May → ~21 Jun (very long travel lead) |
 | **Mundi Mundi Bash 2027** | Aug (TBA) | Broken Hill NSW | A | ★★★ | re-arm 2026 buyer list the day dates drop |
 
@@ -127,7 +137,36 @@ The consistent pattern: **BYO lives in the campsite, never the arena, and glass 
 2. Liquor delivery rules by destination state (and dry-community postcodes around Broken Hill/Birdsville) before promising delivery windows.
 3. Meta alcohol ad policy: 18+ targeting, no under-25 lookalike expansion where restricted, responsible-consumption framing.
 
-## 9. Immediate next actions (this week)
+## 9. October cluster — status as at 9 Sep 2026
+
+Two ★★★ events are inside their ad windows and **neither is built**. Deni is the more urgent of the two.
+
+| | Deni Ute Muster | Savannah in the Round |
+|---|---|---|
+| Dates | 2–3 Oct (23 days) | 8–11 Oct (29 days) |
+| Where | Deniliquin NSW | Kerribee Park, Mareeba, Tropical Nth QLD |
+| Stream | A | C |
+| BYO | Campsite only: 30 cans or 4L cask per adult; none in arena | Campground yes; festival precinct glass-free, no alcohol |
+| Suggested last post | ~Mon 28 Sep | ~Wed 30 Sep (FNQ transit is slower — verify with Australia Post) |
+| Product | none built | none built |
+| Ad window opened | 24 Aug (2 weeks ago) | now |
+
+**Savannah specifics.** ~60km inland from Cairns, so a large share of the audience is FNQ-local (Cairns, Atherton Tablelands, Port Douglas, Townsville) — target as a regional drive-in, not a long-haul convoy. The shipping constraint is delivery *into* FNQ, not the customer's departure date. October there is 30°C+, so the pack should skew tropical (Piña Colada, Mai Tai, Tommy's Margarita) rather than the Amaretto/cold-nights mix used for Gympie. Tickets still on sale (season pass $359, day from $129; powered camping sold out). Promoter is James Dein — unrelated to Greg Donovan's Bash events, so no relationship carry-over from Mundi Mundi.
+
+**Stock note.** 19 Bash Packs (~$3,021 retail) are sitting in a Mundi-branded SKU for an event that finished on 22 Aug. Same twelve pouches — rebadge into the next event pack rather than discounting.
+
+## 10. Playbook validation (30 days to 9 Sep 2026)
+
+The event-pack model is now the best-performing product line in the store:
+
+| Product | Orders | Gross |
+|---|---|---|
+| **The Muster Pack (Gympie)** | 12 | **$1,749** — #1 product in the store |
+| The Bash Pack (Mundi Mundi) | 7 | $1,012 |
+
+Second event outperformed the first by 73%. Two for two — the SOP works and should be run for every qualifying event, not just the flagship ones.
+
+## 11. Immediate next actions (this week)
 
 1. **Decide Bash Pack close-out:** 16 units left, last post ~12 Aug. Push a final "last post" email + ad burst, or hold stock to seed Gympie.
 2. **Launch "The Muster Pack — Gympie"** (27–30 Aug): the window is already at T-3 weeks. Clone product + E1 email + Meta campaign this week.
