@@ -13,13 +13,13 @@ Variant titles are now `12 Pack — Free Shipping` on all three SKUs.
 | | Dragon Dreaming | Deni Ute Muster | Savannah in the Round |
 |---|---|---|---|
 | Dates | **25–28 Sep** (early entry Thu 24) | 2–3 Oct | 8–11 Oct |
-| Days out (from 10 Sep) | **15** | 22 | 28 |
+| Days out (from 12 Sep) | **13** | 20 | 26 |
 | Where | Wee Jasper NSW, Lake Burrinjuck | Deniliquin NSW | Kerribee Park, Mareeba, Tropical Nth QLD |
 | Audience | 18–35 bush doof / lakeside camping | 18–45 rural, utes, country | 35–65 regional mainstream, country/rock |
 | Product | The Lakeside Pack `8646991544354` | The Deni Pack `8639578243106` | The Savannah Pack `8646719045666` |
 | SKU | `MXT-DRAGON-12` | `MXT-DENI-12` | `MXT-SAV-12` |
 | Free-shipping cut-off | **Mon 14 Sep** | Fri 19 Sep | Fri 18 Sep (FNQ transit) |
-| Status | DRAFT — needs stock + activation | DRAFT — needs stock + activation | DRAFT — needs stock + activation |
+| Status | **ACTIVE** — 20 units | **ACTIVE** — 20 units | **ACTIVE** — 20 units |
 
 ## The hook for each — all drawn from the event's own rules
 
@@ -37,9 +37,37 @@ All three rebuilt on the Gympie house template (dark #0b0b10, pink/cyan/green, h
 
 Imagery is generated per event and matched to the actual setting — dusty ute paddock, tropical pandanus and savannah grass, eucalypt lake bank. **No campfires in any of them.**
 
-## Before these go live
+## Imagery — locked (12 Sep)
 
-1. Allocate stock to each SKU and flip DRAFT → ACTIVE. The 19 stranded Bash Packs are the same twelve pouches — rebadge into Dragon Dreaming, which needs stock first.
-2. Confirm the free-shipping cut-offs against your actual dispatch times, especially Mareeba.
-3. Klaviyo: the two existing Deni emails still promise "Free Express Post" and a 28 Sep last-post date — they contradict the new page and need rewriting before send.
-4. Meta: three campaigns, one per event, each hard-stopping at its own cut-off.
+The approved frame is the Deni esky shot: a weathered white **Esky**-brand cooler open on a red ute's folded tailgate, three MXTOLOGY pouches plus two Great Northern Super Crisp cans and a brown stubby in crushed ice, golden-hour dust. Savannah and Dragon Dreaming were generated **from that exact image as a reference**, changing only the background and the three flavours, so all three read as one shoot.
+
+- Deni — `hf_20260910_043527_34b08cd3` · Espresso Martini / Pornstar Martini / Tommy's Margarita · dusty Riverina paddock
+- Savannah — `hf_20260910_073230_cbe1ddaf` · Piña Colada / Tommy's Margarita / Mai Tai · pandanus, savannah grass, red earth, tablelands
+- Dragon Dreaming — `hf_20260910_073230_729925d1` · Espresso Martini / Pornstar Martini / Amaretto Whisky Sour · Lake Burrinjuck, pale-trunked gums
+
+**Rule for all future images:** only the `-CORRECTED-2608` MXTOLOGY pouch elements already loaded in Higgsfield, plus `mxt-pouch-SCALE-2609` (`a2292171-0137-47e3-9395-3771d7b84916`) for size. Never let the model invent a pouch. Scale that's now locked in: pouch 125mm × 170mm, **1.26× a 375ml can's height and 1.8× its width**, can rim landing ~80% up the pouch just under the Y-window top; stubby 1.3× taller than the pouch with its shoulder at the pouch's top seal.
+
+The in-page hero/band images on all three product pages were swapped to match — the old generic-pouch renders are gone from both the galleries and the description HTML.
+
+## Live status (12 Sep)
+
+All three products are **ACTIVE at 20 units each** (60 total across one physical pool — the same twelve pouches, three badges). Bash Pack still holds 19; Grand Final Pack 100.
+
+### Email
+
+| Campaign | Send (AEST) | Klaviyo ID | State |
+|---|---|---|---|
+| Dragon Dreaming E1 "There's no bar at Dragon Dreaming" | **Sun 13 Sep, 10:00am** | `01M29YWRMXRYG2DPK1QB6B471C` | Draft — press send |
+| Deni E1 "You get 30. Make 12 of them count." | Tue 16 Sep, 10:00am | `01M22AR6VSNNJWXNQ8GN2P6H7X` | Draft |
+| Deni E2 "Last day for free shipping to Deni" | Fri 19 Sep, 9:00am | `01M22AR91J64XXX27GSDDFFVGM` | Draft |
+
+Both Deni emails were rewritten: "Free Express Post" and the 28 Sep last-post date are gone, replaced by free shipping with a **Fri 19 Sep** cut-off, matching the page. E2 moved from 28 Sep to 19 Sep; E1 moved off Mon 14 Sep to Tue 16 Sep so the engaged list isn't hit two days running with Dragon Dreaming's Sunday send. All carry per-event UTMs.
+
+Note the Klaviyo quirk: templates already bound to a campaign message return 404 on update. The fix is create-new-template → `assign_template_to_campaign_message`, which clones it onto the message.
+
+## Still open
+
+1. **Savannah has no email arc yet.** Its cut-off is Fri 18 Sep — needs an E1 this coming week.
+2. **Meta: three campaigns specced, none launched.** This is the actual revenue lever — Mundi ran 5.5× ROAS at 11.7% CTR while email converted 1 order per 1,199 recipients. Dragon Dreaming's window is nearly shut; if only one runs, run that one. Needs budget sign-off.
+3. Confirm the free-shipping cut-offs against real dispatch times, especially Mareeba.
+4. The 20/20/20 split is nominal against one physical pouch pool — if a single event sells through hard, rebalance the other two down before they oversell.
