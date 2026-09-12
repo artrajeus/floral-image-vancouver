@@ -41,9 +41,13 @@ Imagery is generated per event and matched to the actual setting — dusty ute p
 
 The approved frame is the Deni esky shot: a weathered white **Esky**-brand cooler open on a red ute's folded tailgate, three MXTOLOGY pouches plus two Great Northern Super Crisp cans and a brown stubby in crushed ice, golden-hour dust. Savannah and Dragon Dreaming were generated **from that exact image as a reference**, changing only the background and the three flavours, so all three read as one shoot.
 
-- Deni — `hf_20260910_043527_34b08cd3` · Espresso Martini / Pornstar Martini / Tommy's Margarita · dusty Riverina paddock
-- Savannah — `hf_20260910_073230_cbe1ddaf` · Piña Colada / Tommy's Margarita / Mai Tai · pandanus, savannah grass, red earth, tablelands
-- Dragon Dreaming — `hf_20260910_073230_729925d1` · Espresso Martini / Pornstar Martini / Amaretto Whisky Sour · Lake Burrinjuck, pale-trunked gums
+**Superseded 12 Sep** — those three wide frames shipped with butchered label text and were replaced by tight close-ups (see below). Current approved set:
+
+- Deni — `hf_20260912_045607_b94ae0be` · Espresso Martini / Pornstar Martini / Tommy's Margarita · dusty Riverina paddock
+- Savannah — `hf_20260912_050423_94be3b0f` · Piña Colada / Tommy's Margarita / Mai Tai · pandanus, savannah grass, red earth, tablelands
+- Dragon Dreaming — `hf_20260912_050429_5cc635e8` · Espresso Martini / Pornstar Martini / Amaretto Whisky Sour · Lake Burrinjuck, pale-trunked gums
+
+All three read correctly: MXTOLOGY on every pouch, all flavour names, ESKY and GREAT NORTHERN.
 
 ### Lanyard proof shots (12 Sep)
 
@@ -61,7 +65,7 @@ The live Deni close-up shipped with butchered label text (misspelled MXTOLOGY, g
 
 **Rule for all future images:** only the `-CORRECTED-2608` MXTOLOGY pouch elements already loaded in Higgsfield, plus `mxt-pouch-SCALE-2609` (`a2292171-0137-47e3-9395-3771d7b84916`) for size. Never let the model invent a pouch. Scale that's now locked in: pouch 125mm × 170mm, **1.26× a 375ml can's height and 1.8× its width**, can rim landing ~80% up the pouch just under the Y-window top; stubby 1.3× taller than the pouch with its shoulder at the pouch's top seal.
 
-The in-page hero/band images on all three product pages were swapped to match — the old generic-pouch renders are gone from both the galleries and the description HTML.
+Galleries and description HTML on all three pages now run the same three images in the same order: close-up esky → campsite hero → dancing shot. The dancing shot sits in the "Clip it on" section, which previously showed a campsite scene that didn't demonstrate a lanyard at all. No generic-pouch renders remain anywhere.
 
 ## Live status (12 Sep)
 
