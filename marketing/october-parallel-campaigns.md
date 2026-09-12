@@ -45,6 +45,20 @@ The approved frame is the Deni esky shot: a weathered white **Esky**-brand coole
 - Savannah — `hf_20260910_073230_cbe1ddaf` · Piña Colada / Tommy's Margarita / Mai Tai · pandanus, savannah grass, red earth, tablelands
 - Dragon Dreaming — `hf_20260910_073230_729925d1` · Espresso Martini / Pornstar Martini / Amaretto Whisky Sour · Lake Burrinjuck, pale-trunked gums
 
+### Lanyard proof shots (12 Sep)
+
+The Gympie campground dancing shot is the approved template for "people actually wearing it". Scene-specific versions were generated from that frame for each event, so the energy, framing and lanyards carry across while the setting and styling match the crowd:
+
+- Deni — `hf_20260912_045513_9212a81c` · dusty Riverina paddock, rows of utes with roll bars, swags, hats and boots
+- Savannah — `hf_20260912_045518_cb45c8b4` · pandanus palms, red earth, tablelands behind, dressed for 30°C, no flannel
+- Dragon Dreaming — `hf_20260912_045311_5b593b98` · Lake Burrinjuck, pale gums, bucket hats, barefoot — deliberately not country
+
+### Text on labels — what actually works
+
+The live Deni close-up shipped with butchered label text (misspelled MXTOLOGY, garbled flavour names). Root cause is **pixel density, not prompting**: at wide framing the lettering is too small for the model to hold, and iterative "fix this word" passes just move the error somewhere else — each pass corrects what you name and garbles what you don't.
+
+**The fix is to shoot tight.** A close-up where the pouches fill most of the frame renders MXTOLOGY, the flavour names, ESKY and GREAT NORTHERN all correctly in one pass. Any shot where label text needs to be legible must be framed tight; any wide shot should keep the pouches small enough that the text reads as texture rather than words.
+
 **Rule for all future images:** only the `-CORRECTED-2608` MXTOLOGY pouch elements already loaded in Higgsfield, plus `mxt-pouch-SCALE-2609` (`a2292171-0137-47e3-9395-3771d7b84916`) for size. Never let the model invent a pouch. Scale that's now locked in: pouch 125mm × 170mm, **1.26× a 375ml can's height and 1.8× its width**, can rim landing ~80% up the pouch just under the Y-window top; stubby 1.3× taller than the pouch with its shoulder at the pouch's top seal.
 
 The in-page hero/band images on all three product pages were swapped to match — the old generic-pouch renders are gone from both the galleries and the description HTML.
