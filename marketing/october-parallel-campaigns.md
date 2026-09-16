@@ -18,7 +18,7 @@ Variant titles are now `12 Pack — Free Shipping` on all three SKUs.
 | Audience | 18–35 bush doof / lakeside camping | 18–45 rural, utes, country | 35–65 regional mainstream, country/rock |
 | Product | The Lakeside Pack `8646991544354` | The Deni Pack `8639578243106` | The Savannah Pack `8646719045666` |
 | SKU | `MXT-DRAGON-12` | `MXT-DENI-12` | `MXT-SAV-12` |
-| Free-shipping cut-off | **Mon 14 Sep** | Fri 19 Sep | Fri 18 Sep (FNQ transit) |
+| Shipping cut-off | **Tue 22 Sep — now FREE EXPRESS** | Fri 19 Sep (free standard) | Fri 18 Sep (free standard, FNQ transit) |
 | Status | **ACTIVE** — 20 units | **ACTIVE** — 20 units | **ACTIVE** — 20 units |
 
 ## The hook for each — all drawn from the event's own rules
@@ -89,3 +89,21 @@ Note the Klaviyo quirk: templates already bound to a campaign message return 404
 2. **Meta: three campaigns specced, none launched.** This is the actual revenue lever — Mundi ran 5.5× ROAS at 11.7% CTR while email converted 1 order per 1,199 recipients. Dragon Dreaming's window is nearly shut; if only one runs, run that one. Needs budget sign-off.
 3. Confirm the free-shipping cut-offs against real dispatch times, especially Mareeba.
 4. The 20/20/20 split is nominal against one physical pouch pool — if a single event sells through hard, rebalance the other two down before they oversell.
+
+
+## Dragon Dreaming moved to free express (16 Sep)
+
+The original free-shipping cut-off of Mon 14 Sep lapsed with no email and no ads behind it, and the page kept advertising the dead date. Corrected:
+
+- **Cut-off is now Tuesday 22 September**, with the email advising Monday 21st as the safe date.
+- **The Lakeside Pack variant was moved out of the General delivery profile into `Event Packs — Express Included`** (`gid://shopify/DeliveryProfile/136735195170`), which carries a $0 AusPost Express rate. Free express is now applied automatically at checkout — nothing to select, no code. Variant renamed `12 Pack — FREE Express Post`.
+- Worth knowing: the General profile already gives free *standard* shipping on orders over $100, so the old "free shipping" claim was technically true but incidental, and standard post no longer reaches Wee Jasper in time. Express is the only honest way to promise arrival. This is the second stage of the original two-stage plan — free shipping while there was runway, express once there wasn't.
+- Page rewritten: ship note, shipping panel, a new "Free Express Post" card replacing "Packs flat", the arrival FAQ, and a fine-print line noting AusPost timeframes are not guaranteed to every address.
+
+### The email
+
+`01M29YWRMXRYG2DPK1QB6B471C` — subject **"Dragon Dreaming is next weekend"**, preview "No bar on site. No glass at the gate. FREE Express Post — order by Monday." Staged **Thu 17 Sep 10:00am AEST**, still Draft. Hero image is the name-dominant Dragon Dreaming ad creative. Leads on the no-bar/no-glass facts, names the Monday 21st safe date and the Tuesday 22nd hard cut-off, and uses the Wee Jasper–Canberra proximity as a local hook.
+
+**Audience needs a decision before send.** It is currently set to four audiences — Canberra Beer and Cider Fest, Easter Friday Canberra Races, Engaged 90 days, and **Everyone** — estimating **2,372 recipients**. The two Canberra lists are exactly right for a festival an hour from Canberra. "Everyone" makes the other three redundant and mails the whole database, which is the pattern that produced more unsubscribes than clicks on 10 Aug (1,199 recipients → 7 clicks, 10 unsubs). Recommend dropping "Everyone" and keeping the two Canberra lists plus Engaged 90 days.
+
+Klaviyo's connector cannot create segments, so a true ACT/NSW-Southern-Tablelands geo segment has to be built in the UI if you want tighter targeting than the two Canberra event lists give.
