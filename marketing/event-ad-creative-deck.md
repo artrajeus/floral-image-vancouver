@@ -4,13 +4,18 @@
 
 ## The rule of the format
 
-Every creative is **4:5**, and every one has three text zones:
+Every creative is **4:5**. **The festival name is the single biggest element in the frame** — bigger than the hook, bigger than the product.
 
 | Zone | Job | Rule |
 |---|---|---|
-| **Black band, top quarter** | The interrupt — the event's own restriction, stated flat | Max 4 words on line 1. White. |
-| **Cyan line under it** | The turn — what that restriction means for them | Max 6 words. |
-| **Pink strip, bottom edge** | Qualifier — event name + glass-free | Small caps, one line. |
+| **Black band, top third** | **THE FESTIVAL NAME** — the qualifier | Enormous condensed white caps, filling the band edge to edge. Nothing competes with it. |
+| **Small line under it** | Dates + location | Cyan or white, small. Lets them confirm it's *their* year. |
+| **Photo** | The product in that festival's setting | Approved close-up. |
+| **Bottom band or pink strip** | The hook — the event's own restriction | Medium caps, plus the offer line. |
+
+**Why the name leads.** A Savannah ticket-holder does not stop for "THE PRECINCT IS DRY" — that means nothing until they know who's talking. They stop for **SAVANNAH IN THE ROUND**, because it's the thing they've already bought a ticket to and paid a hotel deposit on. The rule then does the persuading *after* the stop. Name qualifies, hook converts — in that order.
+
+This also feeds the ad platform. Meta reads the text in the creative, so the event name makes the ad legible to the system as well as the human. More importantly, putting the name up front means the people who engage early are genuinely attendees rather than a broad rural audience — and it's that early, clean engagement signal that teaches the system who to widen to. A vaguer creative gets vaguer learning.
 
 **Why a solid band and not type over the photo:** flat colour behind lettering renders cleanly; type laid over a busy photo is what produced the butchered labels on the first Deni page. Keep it.
 
@@ -26,12 +31,14 @@ Every creative is **4:5**, and every one has three text zones:
 
 ### In-image copy
 
-| | Line 1 (white) | Line 2 (cyan) | Strip |
-|---|---|---|---|
-| **A — lead** | YOU GET 30 | MAKE 12 OF THEM COUNT | DENI UTE MUSTER · STRICTLY NO GLASS |
-| B | 30 CANS. NO GLASS. | TWELVE OF THEM COULD BE COCKTAILS | DENI UTE MUSTER · PRE-MIX IS ALLOWED |
-| C | PRE-MIX IS ALLOWED | NOBODY SAID IT HAD TO BE BEER | DENI UTE MUSTER · STRICTLY NO GLASS |
-| D — final 48h | LAST DAY TO ORDER | IT WON'T BEAT YOU TO DENI | FREE SHIPPING ENDS TONIGHT |
+Name block is fixed on every variant: **DENI UTE MUSTER** / 2–3 OCTOBER · DENILIQUIN NSW. Only the hook rotates.
+
+| | Hook line | Offer line |
+|---|---|---|
+| **A — lead** | YOU GET 30. MAKE 12 OF THEM COUNT. | 12 GLASS-FREE COCKTAILS · FREE SHIPPING |
+| B | YOU GET 30 CANS — MAKE 12 OF THEM COCKTAILS | 12 GLASS-FREE COCKTAILS · FREE SHIPPING |
+| C | PRE-MIX IS ALLOWED. NOBODY SAID IT HAD TO BE BEER. | STRICTLY NO GLASS · FREE SHIPPING |
+| D — final 48h | LAST DAY TO ORDER FOR DENI | FREE SHIPPING ENDS TONIGHT |
 
 ### Ad text
 
@@ -56,12 +63,14 @@ Every creative is **4:5**, and every one has three text zones:
 
 ### In-image copy
 
-| | Line 1 (white) | Line 2 (cyan) | Strip |
-|---|---|---|---|
-| **A — lead** | THE PRECINCT IS DRY | YOUR CAMP DOESN'T HAVE TO BE | SAVANNAH IN THE ROUND · GLASS-FREE SITE |
-| B | NOTHING CROSSES THE GATE | SO STOCK THE SIDE THAT'S YOURS | SAVANNAH IN THE ROUND · BYO AT CAMP |
-| C | 30°C. FOUR DAYS. | ONE ESKY SHELF SORTS IT | SAVANNAH IN THE ROUND · GLASS-FREE SITE |
-| D — final 48h | FNQ TAKES LONGER | ORDER TODAY OR MISS THE RANGE | FREE SHIPPING ENDS TONIGHT |
+Name block is fixed on every variant: **SAVANNAH IN THE ROUND** / 8–11 OCTOBER · MAREEBA QLD. Only the hook rotates.
+
+| | Hook line | Offer line |
+|---|---|---|
+| **A — lead** | THE PRECINCT IS DRY. YOUR CAMP ISN'T. | 12 GLASS-FREE COCKTAILS · FREE SHIPPING |
+| B | NOTHING CROSSES THE GATE. STOCK THE SIDE THAT'S YOURS. | BYO AT CAMP · FREE SHIPPING |
+| C | 30°C. FOUR DAYS. ONE ESKY SHELF. | 12 GLASS-FREE COCKTAILS · FREE SHIPPING |
+| D — final 48h | FNQ TAKES LONGER. ORDER TODAY. | FREE SHIPPING ENDS TONIGHT |
 
 ### Ad text
 
@@ -88,12 +97,14 @@ Every creative is **4:5**, and every one has three text zones:
 
 ### In-image copy
 
-| | Line 1 (white) | Line 2 (cyan) | Strip |
-|---|---|---|---|
-| **A — lead** | THERE IS NO BAR | YOU ARE THE BAR | DRAGON DREAMING · NOTHING SOLD ON SITE |
-| B | NO BAR. NO GLASS. | NO RE-SUPPLY. | DRAGON DREAMING · WEE JASPER |
-| C | WHAT YOU CARRY IN | IS THE WHOLE WEEKEND | DRAGON DREAMING · GLASS IS CONFISCATED |
-| D — barefoot angle | IT'S A BAREFOOT FESTIVAL | THAT'S WHY GLASS IS BANNED | DRAGON DREAMING · POUCHES CAN'T BREAK |
+Name block is fixed on every variant: **DRAGON DREAMING** / 25–28 SEPTEMBER · WEE JASPER NSW. Only the hook rotates.
+
+| | Hook line | Offer line |
+|---|---|---|
+| **A — lead** | THERE IS NO BAR. YOU ARE THE BAR. | 12 GLASS-FREE COCKTAILS · FREE SHIPPING |
+| B | NO BAR ON SITE — NO GLASS AT THE GATE | 12 GLASS-FREE COCKTAILS · FREE SHIPPING |
+| C | WHAT YOU CARRY IN IS THE WHOLE WEEKEND | NOTHING SOLD ON SITE · FREE SHIPPING |
+| D — barefoot angle | IT'S BAREFOOT. THAT'S WHY GLASS IS BANNED. | A POUCH CAN'T BREAK · FREE SHIPPING |
 
 ### Ad text
 
@@ -114,7 +125,7 @@ Every creative is **4:5**, and every one has three text zones:
 
 Run **one campaign per event**, three creatives each (A lead + two challengers), same budget, same audience. Kill on CTR first — Mundi's 11.7% is the benchmark and a creative under ~4% is not stopping anyone. Only then judge ROAS.
 
-The variable being tested is **which restriction stings most**, not which photo is prettiest. Keep the photo constant within an event so the copy is the only thing moving.
+The variable being tested is **which restriction stings most**, not which photo is prettiest. Keep the photo constant within an event, and keep the name block identical across all variants — it is the control, not a variable. The only thing moving is the hook line.
 
 ## Production notes
 
