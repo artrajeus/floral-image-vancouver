@@ -107,3 +107,34 @@ The original free-shipping cut-off of Mon 14 Sep lapsed with no email and no ads
 **Audience needs a decision before send.** It is currently set to four audiences — Canberra Beer and Cider Fest, Easter Friday Canberra Races, Engaged 90 days, and **Everyone** — estimating **2,372 recipients**. The two Canberra lists are exactly right for a festival an hour from Canberra. "Everyone" makes the other three redundant and mails the whole database, which is the pattern that produced more unsubscribes than clicks on 10 Aug (1,199 recipients → 7 clicks, 10 unsubs). Recommend dropping "Everyone" and keeping the two Canberra lists plus Engaged 90 days.
 
 Klaviyo's connector cannot create segments, so a true ACT/NSW-Southern-Tablelands geo segment has to be built in the UI if you want tighter targeting than the two Canberra event lists give.
+
+
+## Shipping switchover schedule (set 16 Sep)
+
+Dragon Dreaming is already on free express. Deni and Savannah stay on **free standard** to protect margin while there is still runway, then flip to **free express** for the final run. Dispatch is from **Norwood SA**, which matters for the dates below.
+
+| Event | Event dates | Free-standard cut-off | Flip to FREE EXPRESS | Express cut-off |
+|---|---|---|---|---|
+| Dragon Dreaming | 25–28 Sep | ~~14 Sep~~ (lapsed) | **done 16 Sep** | Tue 22 Sep |
+| Deni Ute Muster | 2–3 Oct | Fri 19 Sep | **Mon 28 Sep** | ~Tue 29 Sep |
+| Savannah in the Round | 8–11 Oct | Fri 18 Sep | **Mon 28 Sep** (not 2 Oct — see below) | ~Wed 30 Sep |
+
+### Why Savannah cannot wait until 2 October
+
+Two things collide:
+
+1. **Monday 5 October is Labour Day in South Australia**, where we dispatch from. An order placed Fri 2 Oct would not be picked until **Tue 6 Oct**.
+2. **Express to Mareeba is not a next-day lane.** AusPost Express from Adelaide into Far North Queensland is realistically 3+ business days, so a Tue 6 Oct dispatch lands **Fri 9 Oct at the earliest** — after gates open on the 8th, and well after anyone driving up early.
+
+Flipping Savannah on **Mon 28 Sep** with a cut-off around **Wed 30 Sep** clears the holiday entirely and still leaves transit room. Savannah's cut-off has to sit earlier than Deni's even though its event is a week later — FNQ transit is the binding constraint, not the customer's departure date.
+
+### The gap problem
+
+Both pages name a hard free-standard date (19 Sep for Deni, 18 Sep for Savannah). From the day after, those dates are dead copy sitting on a live product — exactly what happened to Dragon Dreaming.
+
+So each page needs **two** touches, not one:
+
+- **Sat 19 / Sun 20 Sep** — soften the expired standard-post date so nothing stale is showing. Keep selling; do not promise a delivery window yet.
+- **Mon 28 Sep** — move both variants into `Event Packs — Express Included` (`gid://shopify/DeliveryProfile/136735195170`), rename variants to `12 Pack — FREE Express Post`, and rewrite the ship note, shipping panel and arrival FAQ the same way Dragon Dreaming's were.
+
+This is the step that was missed last time. It needs a reminder against it, not a note in a file.
