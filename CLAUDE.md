@@ -38,7 +38,15 @@ Never bake a shipping deadline into an **image**; it strands the asset when the 
 - Campaigns created via the API land in **Draft** and **do not send on their own**, no matter what send time is set. Someone has to press send. Three event emails have already lapsed unsent this way.
 - The connector **cannot create segments**, only lists. Geo segments must be built in the Klaviyo UI.
 - Templates already bound to a campaign message return 404 on update. The way round it is create a new template, then `assign_template_to_campaign_message`, which clones it onto the message.
-- Useful audiences: `WYgbYS` Engaged 90 days · `UcUqnz` Canberra Beer and Cider Fest · `XvccHi` Easter Friday Canberra Races · `UubAay` **Everyone** (avoid — mailing the whole database produces more unsubscribes than clicks).
+### Audiences
+
+**The Canberra region cluster.** Several event lists are made up of Canberra-area residents, and together they are the right audience for anything in the ACT / Southern Tablelands / Riverina — Dragon Dreaming at Wee Jasper especially. Aaron set these deliberately; do not narrow them without asking.
+
+`UcUqnz` Canberra Beer and Cider Fest · `XvccHi` Easter Friday Canberra Races · `TjtTXe` Black Opal Stakes · `Szksq5` Gundagai Snake Cup · `UkF2ZG` Hops and Hooves · `S4ftuZ` Melbourne Cup 2025 · `RBgf8t` Spring Out 2025 · `XvYG2h` Soundbites 2026
+
+Not geographic, but fine to include: `X6DPBe` Website Signups 2026, `WYgbYS` Engaged 90 days (the most responsive cohort).
+
+**Avoid `UubAay` "Everyone"** — mailing the whole database produces more unsubscribes than clicks (10 Aug: 1,199 recipients → 7 clicks, 10 unsubs). It also makes every other list on the campaign redundant.
 
 ## Imagery
 
