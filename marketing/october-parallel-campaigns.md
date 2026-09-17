@@ -86,7 +86,7 @@ Note the Klaviyo quirk: templates already bound to a campaign message return 404
 ## Still open
 
 1. **Savannah has no email arc yet.** Its cut-off is Fri 18 Sep — needs an E1 this coming week.
-2. **Meta: three campaigns specced, none launched.** This is the actual revenue lever — Mundi ran 5.5× ROAS at 11.7% CTR while email converted 1 order per 1,199 recipients. Dragon Dreaming's window is nearly shut; if only one runs, run that one. Needs budget sign-off.
+2. ~~**Meta: three campaigns specced, none launched.**~~ **Superseded 17 Sep** — all three are built and the core ad sets are live. See *Meta build — Deni + Savannah* at the foot of this file for IDs, geo and what is still paused. The reasoning stands: Mundi ran 5.5× ROAS at 11.7% CTR while email converted 1 order per 1,199 recipients.
 3. Confirm the free-shipping cut-offs against real dispatch times, especially Mareeba.
 4. The 20/20/20 split is nominal against one physical pouch pool — if a single event sells through hard, rebalance the other two down before they oversell.
 
@@ -111,7 +111,7 @@ Klaviyo's connector cannot create segments, so a true ACT/NSW-Southern-Tableland
 
 ## Shipping switchover schedule (set 16 Sep)
 
-Dragon Dreaming is already on free express. Deni and Savannah stay on **free standard** to protect margin while there is still runway, then flip to **free express** for the final run. Dispatch is from **Norwood SA**, which matters for the dates below.
+Dragon Dreaming is already on free express. Deni and Savannah stay on **free standard** to protect margin while there is still runway, then flip to **free express** for the final run. Dispatch is from **Mitchell, ACT**, which matters for the dates below. (Corrected 17 Sep — this section originally said Norwood SA, taken from the stale Shopify location record. The conclusions below survive the correction, but only by coincidence: see the Labour Day note.)
 
 | Event | Event dates | Free-standard cut-off | Flip to FREE EXPRESS | Express cut-off |
 |---|---|---|---|---|
@@ -123,8 +123,8 @@ Dragon Dreaming is already on free express. Deni and Savannah stay on **free sta
 
 Two things collide:
 
-1. **Monday 5 October is Labour Day in South Australia**, where we dispatch from. An order placed Fri 2 Oct would not be picked until **Tue 6 Oct**.
-2. **Express to Mareeba is not a next-day lane.** AusPost Express from Adelaide into Far North Queensland is realistically 3+ business days, so a Tue 6 Oct dispatch lands **Fri 9 Oct at the earliest** — after gates open on the 8th, and well after anyone driving up early.
+1. **Monday 5 October is Labour Day in the ACT**, where we dispatch from. An order placed Fri 2 Oct would not be picked until **Tue 6 Oct**. (ACT Labour Day and SA Labour Day are both the first Monday in October, which is why the original Norwood-based version of this note reached the same date.)
+2. **Express to Mareeba is not a next-day lane.** AusPost Express from Canberra into Far North Queensland is realistically 3+ business days, so a Tue 6 Oct dispatch lands **Fri 9 Oct at the earliest** — after gates open on the 8th, and well after anyone driving up early.
 
 Flipping Savannah on **Mon 28 Sep** with a cut-off around **Wed 30 Sep** clears the holiday entirely and still leaves transit room. Savannah's cut-off has to sit earlier than Deni's even though its event is a week later — FNQ transit is the binding constraint, not the customer's departure date.
 
@@ -138,3 +138,56 @@ So each page needs **two** touches, not one:
 - **Mon 28 Sep** — move both variants into `Event Packs — Express Included` (`gid://shopify/DeliveryProfile/136735195170`), rename variants to `12 Pack — FREE Express Post`, and rewrite the ship note, shipping panel and arrival FAQ the same way Dragon Dreaming's were.
 
 This is the step that was missed last time. It needs a reminder against it, not a note in a file.
+
+---
+
+## Meta build — Deni + Savannah (17 Sep)
+
+### Account constants
+
+| | |
+|---|---|
+| Ad account | `1058059948561713` (MXTology) |
+| Pixel | `723291006083300` — recovered from the storefront HTML, not asked for |
+| Page | `137867822740681` — recovered from the `{page_id}_{post_id}` form of `effective_object_story_id` |
+
+Every ad set in this account optimises `OFFSITE_CONVERSIONS` on `IMPRESSIONS` with `promoted_object = {pixel_id, custom_event_type: PURCHASE}`. Match that; do not invent a different shape.
+
+### What was already there
+
+Both event campaigns **already existed and were live**, not paused — `MXT_DeniUteMuster_2026_Sales` (`120258203366660197`) and `MXT_SavannahInTheRound_2026_Sales` (`120258203367050197`), $30/day each, one ad set apiece targeting **all of Australia, 18–55**. Combined spend was $2.62. Building from scratch would have duplicated them. Check before creating.
+
+### Geo, tightened in place
+
+The core ad sets were retargeted rather than rebuilt. Locations are given as **`custom_locations` (lat/long + radius)** deliberately — it avoids guessing Meta's location keys, and it puts the catchment where the drive actually comes from.
+
+| Ad set | ID | Locations |
+|---|---|---|
+| `Savannah_Core_FNQ_Mareeba_Cairns` | `120258203368880197` | Mareeba 80km (sweeps Cairns, Atherton, Port Douglas), Innisfail 40km |
+| `Deni_Core_Riverina_NthVic` | `120258203368280197` | Deniliquin 60km, Shepparton 50km, Bendigo 50km, Albury 50km, Wagga 50km |
+
+Both kept 18–55, `location_types: [home, recent]`, and `advantage_audience: 0` so Meta does not widen past the catchment while the signal is still thin. Both **stay running** — the geo change resets learning, but there was nothing to lose at $2.62.
+
+**Note on the geography.** The brief was "those areas up in Queensland", but only Savannah is Queensland. **Deni Ute Muster is Deniliquin NSW** — catchment is the Riverina and northern Victoria. Getting this wrong would have pointed half the budget at the wrong state.
+
+### Secondary regions — separate campaigns, built paused
+
+Both event campaigns use **campaign budget optimisation**, so a second ad set inside them would share the same $30 rather than get its own. Dragon Dreaming solved this with a separate `_MEL_ADL` campaign; the same split is used here.
+
+| Campaign | ID | Budget | Ad set | Ads |
+|---|---|---|---|---|
+| `MXT_SavannahInTheRound_2026_Sales_TSV` | `120258204137830197` | $15/day | `Savannah_Secondary_Townsville` `120258204141580197` — Townsville 80km, Mount Isa 50km | `Savannah_TSV_PrecinctIsDry`, `Savannah_TSV_FNQTransit` |
+| `MXT_DeniUteMuster_2026_Sales_MEL` | `120258204138140197` | $15/day | `Deni_Secondary_MEL_SYD` `120258204142800197` — Melbourne 50km, Wollongong 40km, Sydney 50km | `Deni_MELSYD_ThirtyCanAllowance`, `Deni_MELSYD_PreMixIsAllowed` |
+
+**Everything in this table is paused.** Campaigns, ad sets and ads all. Nothing spends until someone enables it.
+
+Copy is lifted from `event-ad-creative-deck.md` — the lead hook plus one challenger per region. Images are the approved close-ups and dancing shots, served from the Shopify CDN rather than the Higgsfield CDN so the ads do not depend on a generation host staying up.
+
+### Gotcha: bid strategy
+
+`create_adset` failed the first time with *"Bid amount required for bid strategy provided"* — a newly created campaign inherits a capped bid strategy in this account. Fix is `update_campaign` with `bid_strategy: LOWEST_COST_WITHOUT_CAP` **before** creating the ad set, which matches how every other campaign here is set up.
+
+### Still outstanding
+
+- The **name-dominant creatives** (festival name as the largest element) are only live for Dragon Dreaming. Savannah and Deni versions exist as images but are not on public URLs, so the ads above use the plain close-ups. Push them to Shopify files and swap via `update_ad_creative`.
+- Secondary campaigns need enabling once someone is happy with them.
