@@ -261,3 +261,32 @@ The Deni page said **"Friday 19 September"** — the 19th is a Saturday. Correct
 All three pages now name Canberra as the dispatch origin in their shipping copy, consistent with the ads — a short run for Deni, an hour up the road for Dragon Dreaming, the longest lane we run for Savannah.
 
 **Verified live** with a headless browser on all three URLs: "Write a review" gone, Okendo containers at zero height, six review cards rendering, both new heroes serving.
+
+### Savannah hero v2 (17 Sep) — the two defects Aaron caught
+
+Aaron zoomed into the first version and found two things wrong, both real:
+
+1. The man on the right had the pouch at his mouth but was **biting the flat top seal**, not using the spout.
+2. The man on the left had a pouch at his chest with **no hand holding it** — it floated.
+
+Neither was visible at hero scale; both were obvious at 100%. Worth remembering that a hero gets zoomed.
+
+**What fixed it.** Naming the failure modes explicitly as negatives, rather than only describing the desired state:
+
+> `Her RIGHT HAND IS WRAPPED FIRMLY AROUND THE MIDDLE OF THE POUCH, all four fingers visible curling around the near face and her thumb on the far side... the short angled SPOUT that projects from the pouch's UPPER-LEFT CORNER is between her lips.`
+>
+> `ABSOLUTELY NOT: nobody bites or mouths the flat sealed top edge. No straws. No pouch floating in mid-air or touching a face without a hand holding it. Every pouch is either held in a clearly visible hand, clipped to a lanyard, or standing in the esky.`
+
+Also **reduced the number of drinkers to one**. Every additional person mid-sip is another chance to get the action wrong; the rest just hold their pouches with a visible grip.
+
+**Live file:** `mxt-savannah-hero-campground-v2.png`. Four distinct sun-weathered Australians in camp chairs, one drinking through the spout with his hand wrapped round the pouch, the other three holding theirs with visible grips, an esky of pouches on ice, and a genuinely busy campground behind — rows of tents, camper trailers, a caravan, pandanus and the ranges in golden dust.
+
+### QC result, stated honestly
+
+Ran the full checklist from the `mxtology-pouch-render` skill. Three rounds, eleven generations.
+
+**Passes:** every pouch is held in a visible hand or standing in the esky · the drinker uses the spout, not the seal · four clearly distinct realistic faces · correct FNQ campground setting · no glass anywhere · pouch proportions roughly 1.25–1.3 h:w, near the 1.3–1.45 target · the two pouches held upright render the M monogram, MXTOLOGY spelled correctly, the Y-window full to the top and the white cap on the spout at upper-left.
+
+**Still not right at 100% zoom:** the drinker's pouch and the ones in the esky carry garbled micro-text, and MXTOLOGY sits centre-top on some rather than beneath the monogram on the lower left. The flavour panel is missing on a couple.
+
+This is the pixel-density ceiling again, and three rounds did not beat it — the pouches are simply too small in a wide frame for the model to hold label text. **Do not spend a fourth round on it.** If a label-accurate wide shot is genuinely needed, the answer is compositing a clean packshot onto the scene, not another generation pass.
