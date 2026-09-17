@@ -218,3 +218,46 @@ Dispatch is Mitchell ACT, and that changes what each campaign can honestly promi
 **Canberra added to `Deni_Secondary_CBR_MEL_SYD`.** It is a genuine feeder for the Muster and it is the fastest address we can serve. Note the overlap: the two live Dragon Dreaming campaigns also target Canberra, so do not enable the Deni secondary before Dragon Dreaming finishes on 28 Sep or they will bid against each other.
 
 **Could not edit:** `Lakeside_ExpressCloser_MELADL` (`120258148324150197`) promotes an existing organic post via `object_story_id`, so Meta exposes no editable creative sub-spec. Its copy still carries no Canberra line. Edit the underlying post, or rebuild the ad as a link ad.
+
+---
+
+## Product page pass — heroes and reviews (17 Sep)
+
+### Heroes replaced on two pages
+
+| Page | Was | Now |
+|---|---|---|
+| Savannah | An empty campground scene with people who read as AI-generated and nobody drinking from the pouch | `mxt-savannah-hero-campground-2026.png` — four distinct sun-weathered Australians around camp chairs, **two of them mid-sip with the white screw-cap spout at their lips**, esky of pouches, pandanus and camper trailers, tablelands behind |
+| Dragon Dreaming | A tents-only lake bank frame with no people | `mxt-dragon-dreaming-hero-camp-2026.png` — the hair-braiding camp shot at Wee Jasper: four friends getting ready before the walk down, one braiding another's hair, lanyards worn, esky of pouches in frame |
+
+The Dragon Dreaming one already existed from 14 Sep and had simply never been used. Both are now Shopify-hosted rather than served off the Higgsfield CDN.
+
+**How the Savannah shot was made, and why it took two rounds.** The first batch of four got the people right — realism cues (`visible pores, freckles, sun damage, sweat sheen, imperfect teeth, every face distinctly different`, 35mm Portra grain) fixed the plastic look immediately, and naming the spout explicitly put it at their lips. But **all four failed the pouch spec**: labels drifted to white, clear or generic, because the pouches were small in a busy wide frame. Same pixel-density limit as the label failures recorded above.
+
+The fix was the corrective pass that has now worked three times: **pass the best frame back as `image_references` and change only the pouches.** One of four came back clean. Keep that as the method — do not re-roll a whole scene to fix a product detail.
+
+**Honest limitation:** at 100% crop the hero's pouch labels are still not product-accurate — the M monogram is right, MXTOLOGY is garbled and the window is a plain pale shape rather than the martini silhouette. At hero display size they read as texture, which is the standing rule for wide frames. Any shot that needs legible labels must be a tight close-up, and the page already carries those in the buybox and the full-bleed band.
+
+### Reviews — all three pages
+
+The three festival packs had **no Okendo data at all** (no `okendo` metafields), so the widget rendered a bare "Write a review" at the foot of every page. Meanwhile the individual cocktails carry 30–48 reviews each at 4.9.
+
+Fixed by mining the cached `okendo.ReviewsWidgetSnippet` metafields on the flavour products for genuinely festival-relevant reviews, and building a curated six-card block on each page, matched to the event:
+
+- **Deni** — Mundi Mundi, "every club and festival", camping, Tommy's, Mai Tai
+- **Savannah** — camping with the Piña Colada, tropical flavours, lanyard, no-glass
+- **Dragon Dreaming** — dancing without putting a drink down, lanyard, Mundi Mundi
+
+The empty Okendo widget is hidden by CSS in the same description block that already hides the theme's breadcrumbs and media slider.
+
+**These are real reviews and they are attributed honestly.** Every card names the flavour it was left on, the block header says plainly that they are reviews of the drinks inside the pack rather than of the pack itself, and the fine print repeats it. Verified buyers are marked as such; the four that are not verified are not marked.
+
+**The proper long-term fix is in Okendo, not here.** Okendo supports product grouping / review syndication — group each festival pack with the flavour products and real reviews flow through into the real widget, with live counts and new reviews appearing automatically. That needs doing in the Okendo UI; there is no connector for it in this session. Until then the curated block is static and will not update.
+
+### Also fixed
+
+The Deni page said **"Friday 19 September"** — the 19th is a Saturday. Corrected to **Friday 18 September** across the buybox note, the shipping panel and the FAQ. This is the error flagged in the notes above; the coming Friday was clearly what was meant, and a Saturday cut-off is meaningless anyway since ACT dispatch does not run weekends.
+
+All three pages now name Canberra as the dispatch origin in their shipping copy, consistent with the ads — a short run for Deni, an hour up the road for Dragon Dreaming, the longest lane we run for Savannah.
+
+**Verified live** with a headless browser on all three URLs: "Write a review" gone, Okendo containers at zero height, six review cards rendering, both new heroes serving.
