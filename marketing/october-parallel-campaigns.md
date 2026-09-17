@@ -312,3 +312,29 @@ This rule is now in `CLAUDE.md` — it applies to every future image, not just t
 **A campfire appeared in the background** of the first pass, which breaks the no-campfires rule at the top of this file. One targeted edit removed the fire and all its smoke; worth checking for on every generated campground scene, because the model adds them unprompted.
 
 **Remaining deviation, honestly:** the martini window renders as printed artwork on the foil rather than a clear cut-out full of liquid to the top seal, and the pouch is a touch wide at roughly 1.2 h:w against the 1.3–1.45 spec. Everything else passes.
+
+### Savannah hero v4 (17 Sep) — the real pouch at last
+
+v3 got the pose right but Aaron's verdict on the product was blunt and correct: *"this is rubbish, it's not our MXTOLOGY pouch."* It wasn't. It was a plausible black pouch with a **printed** martini glass on it.
+
+**The root cause was mine.** I had been describing the pouch from the written spec for four rounds without ever opening the element's reference images. `show_reference_elements` returns the media URLs; downloading and actually looking at them took one minute and changed everything:
+
+- The martini shape is a **clear die-cut window**, not printed artwork. It runs from the top seal right down to the base, the liquid is visible through it, and the top of the window **feeds up into the spout**.
+- The right-hand panel is a large inset label with black foil visible around all four edges, carrying the palette-knife artwork with the flavour name vertical.
+- There is a die-cut hang-hole in the top seal.
+
+"Clear window" in prose kept coming out as "printed graphic" in the render. Seeing it fixed it.
+
+**Three other changes, all of which mattered:**
+
+1. **One element, not four.** Every earlier prompt passed three or four flavour elements plus the scale element. The model averages them into an invented pouch. A single element renders faithfully.
+2. **Pouch large in frame** — about a quarter of the image height. Small pouch in a busy scene is where the label drifts.
+3. **No `image_references` alongside the element.** They compete and the reference wins, which is why the corrective passes kept half-fixing things.
+
+Result: **1 of 4 on the first batch** with no corrective pass needed. The live hero renders the M monogram, MXTOLOGY spelled correctly beneath it, the clear Y-window full of golden passionfruit, PORNSTAR MARTINI vertical over the palette-knife face, the white ribbed cap on the angled spout at the upper-left, and the hang-hole in the seal. Held in his **left hand**, front square to the lens, spout in his mouth.
+
+All four rules are now in `CLAUDE.md`.
+
+**Live file:** `mxt-savannah-hero-campground-v4.png`. Pornstar Martini is legitimate here — the Savannah Pack contains 2×.
+
+**Useful Shopify trick discovered along the way:** re-uploading with `duplicateResolutionMode: REPLACE` and the *same filename* swaps the image at the same URL, so a hero can be iterated without rewriting the whole `descriptionHtml`. Verified by fetching the old URL and confirming the new bytes. (`mxt-savannah-hero-campground-v3.png` now holds the v4 image as a side effect of that test; nothing references it.)

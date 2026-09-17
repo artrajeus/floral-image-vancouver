@@ -66,3 +66,14 @@ Spell all of it out in the prompt, including the negatives, or the model reverts
 - *"nobody bites or mouths the flat sealed top edge. No straws. No pouch floating without a hand on it."*
 
 **Use one drinker per image.** Every extra person mid-sip is another chance to get the action wrong; everyone else just holds theirs with a visible grip, front to camera.
+
+### Getting the real pouch, not an invented one
+
+Four rounds produced a plausible-looking pouch that was not ours. What fixed it:
+
+1. **Look at the element's reference images before writing the prompt.** `show_reference_elements` returns the media URLs — download and actually view them. Describing the pouch from written notes produced a *printed* martini glass on black foil; the real pouch has a **clear die-cut window** shaped like a martini glass, running from the top seal to the base, with the liquid visible through it and feeding up into the spout. That is not a difference you get right from prose.
+2. **Pass ONE element, not several.** Three or four flavour elements in a prompt get averaged into an invented pouch. One element renders faithfully.
+3. **Keep the pouch large in frame** — roughly a quarter of the image height. Small pouch in a busy scene is where labels drift.
+4. **Do not combine an element with `image_references`.** They compete, and the reference wins.
+
+The V3 Pornstar element `7f7570d6-1439-4200-80a7-82e4a742a8a4` is the most reliable; it carries three views (front, in-hand, beside a 375mL can) and holds proportions on its own.
