@@ -191,3 +191,30 @@ Copy is lifted from `event-ad-creative-deck.md` — the lead hook plus one chall
 
 - The **name-dominant creatives** (festival name as the largest element) are only live for Dragon Dreaming. Savannah and Deni versions exist as images but are not on public URLs, so the ads above use the plain close-ups. Push them to Shopify files and swap via `update_ad_creative`.
 - Secondary campaigns need enabling once someone is happy with them.
+
+### Name-dominant creatives pushed live (17 Sep)
+
+The six typography overlays generated on 16 Sep were sitting only on the Higgsfield CDN. Four are now Shopify-hosted, which is where ad images should live — Meta re-fetches them, and a generation host is not something to depend on:
+
+| File | Layout |
+|---|---|
+| `mxt-deni-name-dominant-A.png` | Black band top third, cyan date line, black bottom band with hook + offer |
+| `mxt-savannah-name-dominant-A.png` | Same as above |
+| `mxt-deni-name-dominant-B.png` | Taller name block, magenta rule, event location on the date line, magenta bottom strip |
+| `mxt-savannah-name-dominant-B.png` | Same as above |
+
+A matches the approved Dragon Dreaming creative; B is a real challenger rather than a recolour, so each ad set runs A against B. Assigned as: core ads → A, secondary ad sets → A and B.
+
+**Known defect, accepted.** Both carry two micro-errors in the photographic layer: the cooler reads `ESKU` instead of `ESKY`, and Deni's Pornstar Martini pouch reads `PORNSTAN`. This is the same pixel-density limit recorded above — the typography band renders perfectly because it is large type on flat colour, while the small label text does not survive. At feed scale it reads as texture. Fix by reshooting the underlying close-up tighter, not by another overlay pass.
+
+### Canberra dispatch, applied to the ad copy
+
+Dispatch is Mitchell ACT, and that changes what each campaign can honestly promise. Rewritten accordingly:
+
+- **Dragon Dreaming** — Wee Jasper is roughly an hour from the depot. This is our strongest delivery position anywhere and it was not being said. `Lakeside_ExpressCloser` now leads on it: free express, effectively overnight for the ACT and Southern Tablelands, safe by Mon 21 Sep and hard cut-off Tue 22 Sep (both weekdays verified).
+- **Deni** — a short interstate hop. Copy says so without promising a lane we have not switched on yet; Deni is still free *standard* until 28 Sep, so no express claim appears.
+- **Savannah** — the long haul. Every Savannah ad now names Canberra as the origin and Far North Queensland as the longest lane, which converts urgency that is otherwise invisible to a buyer who is only thinking about their own departure date.
+
+**Canberra added to `Deni_Secondary_CBR_MEL_SYD`.** It is a genuine feeder for the Muster and it is the fastest address we can serve. Note the overlap: the two live Dragon Dreaming campaigns also target Canberra, so do not enable the Deni secondary before Dragon Dreaming finishes on 28 Sep or they will bid against each other.
+
+**Could not edit:** `Lakeside_ExpressCloser_MELADL` (`120258148324150197`) promotes an existing organic post via `object_story_id`, so Meta exposes no editable creative sub-spec. Its copy still carries no Canberra line. Edit the underlying post, or rebuild the ad as a link ad.
