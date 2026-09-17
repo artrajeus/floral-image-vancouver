@@ -290,3 +290,25 @@ Ran the full checklist from the `mxtology-pouch-render` skill. Three rounds, ele
 **Still not right at 100% zoom:** the drinker's pouch and the ones in the esky carry garbled micro-text, and MXTOLOGY sits centre-top on some rather than beneath the monogram on the lower left. The flavour panel is missing on a couple.
 
 This is the pixel-density ceiling again, and three rounds did not beat it — the pouches are simply too small in a wide frame for the model to hold label text. **Do not spend a fourth round on it.** If a label-accurate wide shot is genuinely needed, the answer is compositing a clean packshot onto the scene, not another generation pass.
+
+### Savannah hero v3 (17 Sep) — the left-hand rule
+
+v2 still had the drinker holding the pouch in his **right** hand. Aaron named the reason it kept failing, and it is geometry rather than taste:
+
+> **The spout sits at the upper-left corner of the pouch's printed front. So anyone drinking has to hold it in their LEFT hand for the front to face the camera.**
+
+A right-hand grip rotates the pouch away and shows the plain black back — or the model compensates by putting the mouth on the flat top seal, which is exactly the defect from v1. Every earlier round had been fighting a symptom.
+
+Spelled out as a positive plus its negatives, it landed first time:
+
+> `SHE HOLDS THE POUCH IN HER LEFT HAND... the spout sits at the UPPER-LEFT corner of the pouch's printed FRONT face, so only a LEFT-HAND grip keeps that printed front square to the camera while the spout reaches her mouth. Her left fingers wrap the LOWER HALF and right-hand EDGE so they do not cover the artwork. The pouch is UPRIGHT, tilted no more than twenty degrees off vertical.`
+
+This rule is now in `CLAUDE.md` — it applies to every future image, not just this one.
+
+**Live file:** `mxt-savannah-hero-campground-v3.png`. A woman mid-sip in the centre, pouch in her left hand, printed front square to camera, spout at her lips; a friend either side, each holding a pouch front-out; a busy campground of tents, camper trailers and caravans behind, pandanus and the ranges beyond.
+
+**This is also the best pouch render we have achieved in a lifestyle frame.** Holding the front square to the lens is what fixed the labels as well as the action — the M monogram sits low on the left with MXTOLOGY spelled correctly beneath it, TOMMY'S MARGARITA runs vertically on the right panel, the liquid is the correct pale green-gold, and the white ribbed cap is on the spout at the upper-left. The recurring label garble was partly a *pose* problem all along: a pouch turned away from the lens gives the model nothing stable to render.
+
+**A campfire appeared in the background** of the first pass, which breaks the no-campfires rule at the top of this file. One targeted edit removed the fire and all its smoke; worth checking for on every generated campground scene, because the model adds them unprompted.
+
+**Remaining deviation, honestly:** the martini window renders as printed artwork on the foil rather than a clear cut-out full of liquid to the top seal, and the pouch is a touch wide at roughly 1.2 h:w against the 1.3–1.45 spec. Everything else passes.

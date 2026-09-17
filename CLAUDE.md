@@ -51,3 +51,18 @@ Not geographic, but fine to include: `X6DPBe` Website Signups 2026, `WYgbYS` Eng
 ## Imagery
 
 See `marketing/october-parallel-campaigns.md` for the full rules. The short version: only use MXTOLOGY pouch elements already loaded in Higgsfield, never let the model invent a pouch, and frame tight when label text has to be legible.
+
+### Drinking from the pouch — the left-hand rule
+
+**Anyone shown drinking must be drinking from the SPOUT, and must hold the pouch in their LEFT hand.**
+
+This is geometry, not preference. The spout sits at the **upper-left corner of the pouch's printed front**. A right-hand grip rotates the pouch away from the lens, so the camera sees the plain black back — or the model compensates by putting their mouth on the flat top seal, which is wrong and looks wrong. Only a left-hand grip keeps the printed front square to camera while the spout reaches the mouth.
+
+Spell all of it out in the prompt, including the negatives, or the model reverts:
+
+- left hand, fingers wrapped around the **lower half and right-hand edge** so they don't cover the artwork
+- pouch held **upright, no more than ~20° off vertical**, full printed front square to camera
+- spout between the lips, lips closed around it
+- *"nobody bites or mouths the flat sealed top edge. No straws. No pouch floating without a hand on it."*
+
+**Use one drinker per image.** Every extra person mid-sip is another chance to get the action wrong; everyone else just holds theirs with a visible grip, front to camera.
