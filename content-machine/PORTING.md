@@ -1,5 +1,11 @@
 # Porting the content machine to Floral Image
 
+> **Building from scratch instead?** If the second business is on a different
+> Claude account with no access to the MXTology repo, use
+> `BOOTSTRAP-PROMPT.md` in this directory — a self-contained prompt that has a
+> fresh session build the whole engine, rules included. This document assumes
+> you can copy files across.
+
 Source repository: **`artrajeus/mxtology-content`** (private, same GitHub
 account). Copy from there rather than from anything reproduced here — a second
 copy of `publish.js` in a second repo is a fork that rots. This document is the
