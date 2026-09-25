@@ -54,7 +54,7 @@ the 2026-08-10 kickoff — uses superseded artwork and must not be published.
 | Amaretto Whisky Sour | `aa8f8e8b-b01b-4946-95a4-76ad5b4dcf6d` | ✅ **approved** | `mxt-amaretto-CURRENT-202608` · source `mxt-glow-amaretto-whisky-sour.jpg` |
 | Granny Smith Fireball | `b9473bf5-9183-4582-a75b-2c7e1f507690` | ✅ **approved** | `mxt-fireball-CURRENT-202608` · source `mxt-glow-granny-smith-fireball.jpg` |
 | Mai Tai | `f981a19d-1e9b-409b-ab82-5dac2578dac6` | ✅ **approved** | `mxt-maitai-CURRENT-202608` · source `mxt-glow-mai-tai.jpg` |
-| Fabulous AF Cosmo | `bed44330-1fd6-4896-a120-d41feb4f14f0` | ✅ **approved** | `mxt-cosmo-CURRENT-202608` · source `mxt-glow-fabulous-af-cosmo.jpg` · Shopify title rename still pending |
+| Fabulous AF Cosmo | `bed44330-1fd6-4896-a120-d41feb4f14f0` | ✅ **approved** | `mxt-cosmo-CURRENT-202608` · source `mxt-glow-fabulous-af-cosmo.jpg` · Shopify title now reads “Fabulous Cosmopolitan” (rename confirmed 2026-09-14 AEO audit) |
 | Shiso Sour | `8b0a225a-a278-4a94-befd-a50a89c49754` | ✅ **approved** | `mxt-shiso-CURRENT-202608` · source `mxt-glow-shiso-sour.jpg` |
 | Elderflower Gin Gimlet | `b2fa3fbb-a4c9-4c6d-802e-ffc03156fc25` | ✅ **approved** | `mxt-gimlet-CURRENT-202608` · source `mxt-glow-elderflower-gin-gimlet.jpg` |
 | Espresso Martini | `607b7da6-a1e6-4e3d-a805-f4f2366b946f` | ✅ **approved** | `mxt-espresso-CURRENT-202608` · source `espresso-martini-5692062.jpg` (bar scene — no `mxt-glow-` asset exists) |
