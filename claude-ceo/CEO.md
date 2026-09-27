@@ -62,7 +62,16 @@ See `OPERATING-RHYTHM.md`. Summary:
 By Friday review, all of the following exist and pass quality standards:
 1. Meta ads audit done + at least one new/refreshed ad creative drafted.
 2. At least one Klaviyo newsletter/campaign drafted (or sent, if approved).
-3. At least three Instagram content pieces drafted.
+3. At least three Instagram content pieces **posted** — not drafted.
+   Production is not the constraint and never was. See the correction in
+   `weeks/2026-09-28-kickoff.md`: MXTology has an automated Instagram publisher
+   in `github.com/artrajeus/mxtology-content` that has published 44 posts since
+   10 August 2026, hourly workflow, 635 green runs. **Windsor's `instagram`
+   connector does not report a post count, and its absence was wrongly read as
+   "nothing posted" for fourteen weeks.** Check the repo's `instagram/SCHEDULE.md`
+   and the `posted` block in each `instagram/queue/*/publish.json` — never the
+   ad connector — before reporting on Instagram. The real gap is slots left at
+   `status: draft` when their time passes.
 4. At least two festival/event outreach emails drafted or sent.
 5. Every founder-flagged email answered or drafted.
 6. Daily briefs delivered every day.
