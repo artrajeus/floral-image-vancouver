@@ -14,6 +14,14 @@ Every deliverable is checked against these before it appears in a report as "don
   `POUCH-ELEMENTS.md` before every generation; if a flavour is quarantined or
   absent, stop and ask. Never substitute, never fall back to an older Element,
   never describe the pouch in prose instead.
+  **⛔ The prose spec in the next paragraph is CONTESTED as of 2026-10-02 and
+  must not be relied on. See the BLOCKED note at the top of `POUCH-ELEMENTS.md`:
+  the approved `-CURRENT-202608` Elements and the newer `-REAL-2609` Elements
+  disagree on whether the flavour artwork is full-bleed or an inset label, and on
+  the pouch proportions; and the approved margarita Element's own text says there
+  is NO vertical rainbow wordmark, contradicting the line below. Generate no
+  pouch imagery until the founder rules.**
+
   Each approved Element carries the full spec: rectangular foil stand-up pouch,
   flat bottom seal, never glass-shaped, glossy black left panel with the
   iridescent rainbow MXT OLOGY wordmark, flavour name on the right panel,

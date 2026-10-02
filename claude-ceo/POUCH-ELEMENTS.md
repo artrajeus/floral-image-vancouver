@@ -34,6 +34,46 @@ generation behind" was wrong and is withdrawn.
 **Rebuild source:** `https://cdn.shopify.com/s/files/1/0553/8145/8978/files/mxt-glow-<flavour>.jpg`
 (no `mxt-glow-` asset exists for Espresso Martini; use `espresso-martini-5692062.jpg`.)
 
+## ⛔ BLOCKED 2026-10-02 — the approved spec is contested. Do not generate.
+
+A newer Element declares one of the approved UUIDs below to be **wrong**.
+`mxt-cosmo-REAL-2609` (`9320c528-e78f-43c1-97b0-00d39a0f8307`, created
+2026-09-10) states in its own description:
+
+> "SUPERSEDES mxt-cosmo-CORRECTED-2608, **mxt-cosmo-CURRENT-202608** and
+> mxt-pouch-SCALE-2609, ALL OF WHICH DESCRIBE THE PACKAGING WRONGLY. Ignore
+> those elements entirely."
+
+`mxt-cosmo-CURRENT-202608` is `bed44330-1fd6-4896-a120-d41feb4f14f0`, marked
+✅ approved in the table below. `mxt-pornstar-REAL-2609`
+(`122e71ca-cb5a-40f0-8cd6-d335212ac7b2`) makes the same claim against the
+pornstar lineage.
+
+The two disputed points:
+
+1. **Flavour artwork** — `-CURRENT-202608` says full-bleed right panel.
+   `-REAL-2609` says a separate inset rectangular label on the lower-right with
+   black foil visible around all four edges, never reaching the pouch edge.
+2. **Proportions** — `-CURRENT-202608` renders squat/near-square.
+   `-REAL-2609` says portrait, roughly 3 wide to 4 tall.
+
+There is also a third, separate conflict with `QUALITY-STANDARDS.md`, which
+describes "the iridescent rainbow MXT OLOGY wordmark". The approved margarita
+Element `0beecfb3-8141-42d3-8e85-eaf091bb1fcd` says the opposite in its own
+text: *"large gradient 'M' monogram … with 'MXTOLOGY' in white capitals directly
+beneath, both HORIZONTAL — NO vertical rainbow wordmark."*
+
+**Nothing has been re-pointed and nothing has been quarantined.** Which lineage
+is correct is a founder call and this file reserves it to the founder. Until it
+is ruled on: **generate no pouch imagery.** Do not resolve this by picking the
+newer Element, the longer description, or the one that sounds more confident —
+that is precisely the reasoning that caused the 2026-08-10 failure.
+
+**Reconcile rule added 2026-10-02:** the Friday reconcile must **diff the Element
+descriptions**, not only check that each approved UUID is present and
+`completed`. A presence check cannot catch a newer Element declaring an approved
+one wrong, which is how this sat undetected for three weeks.
+
 ## Status: ALL ELEMENTS QUARANTINED (2026-08-10)
 
 Every Element in the workspace was created **2026-06-19/20** or **2026-07-03**.
