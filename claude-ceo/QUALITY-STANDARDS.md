@@ -3,7 +3,30 @@
 Every deliverable is checked against these before it appears in a report as "done".
 
 ## Hard facts — check these before any copy or creative ships
-- **Free shipping threshold is $60** (not $66). Matches the store product pages.
+- **⛔ Free shipping threshold is CONTESTED as of 2026-10-06. Do not quote a
+  figure until this is resolved.** This line read "$60 (not $66), matches the
+  store product pages". The live default delivery profile says otherwise:
+
+  | Rate (General profile, all 8 AU states/territories) | Threshold | Price | Active |
+  |---|---|---|---|
+  | Standard | **$100.00 and above** | **$0.00** | yes |
+  | Standard | $0 – $99.99 | $7.97 | yes |
+  | Express Post — 2 Day | none | $30.00 | yes |
+  | Express | $0 – $149 | $30.00 | **no** |
+
+  The delivery profile is what actually charges at checkout, and it sets the free
+  threshold at **$100**, not $60. Either the product pages are now out of date or
+  the profile was changed; resolving which is a founder call.
+
+  **Copy already shipped with "$60" that needs checking:** Klaviyo template
+  `RzebeW` (the Hops & Hooves follow-up, drafted 28 Sept, still unsent to 53
+  people), and the Bottle-O Bros draft `r-1960200949237936241` and the generic
+  2027 festival pitch `r8934145290925456920`.
+
+  Two other profiles exist and ship free with no threshold: **Event Packs —
+  Express Included** (free Express on the 12-packs) and **MXTology Club — Free
+  Shipping** (free Standard for members). That is why the $159 packs always
+  arrive postage-free.
 - **Pouch artwork: `POUCH-ELEMENTS.md` is the ONLY authority.** Never pick a
   Higgsfield Element by name, by description, or by how recent it looks — match
   the **UUID** in that file and check its status is `approved`. Element names
