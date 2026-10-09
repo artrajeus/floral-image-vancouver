@@ -49,19 +49,49 @@ A newer Element declares one of the approved UUIDs below to be **wrong**.
 (`122e71ca-cb5a-40f0-8cd6-d335212ac7b2`) makes the same claim against the
 pornstar lineage.
 
-The two disputed points:
+Three points were originally recorded as disputed. **The 2026-10-09 reconcile
+read all 61 descriptions in full and two of the three dissolve on reading.
+One real conflict remains.**
 
-1. **Flavour artwork** — `-CURRENT-202608` says full-bleed right panel.
-   `-REAL-2609` says a separate inset rectangular label on the lower-right with
-   black foil visible around all four edges, never reaching the pouch edge.
-2. **Proportions** — `-CURRENT-202608` renders squat/near-square.
-   `-REAL-2609` says portrait, roughly 3 wide to 4 tall.
+1. **Flavour artwork — STILL DISPUTED. This is the only open question.**
+   `-CURRENT-202608` (all eleven approved Elements) says *"RIGHT PANEL:
+   full-bleed … illustration"*. `-REAL-2609` says *"a SEPARATE INSET RECTANGULAR
+   LABEL with rounded corners, applied to the lower-right of the pouch face,
+   with BLACK FOIL CLEARLY VISIBLE AROUND ALL FOUR OF ITS EDGES."* These cannot
+   both be true of the same physical pouch. **Founder call. Nothing generates
+   until it is made.**
 
-There is also a third, separate conflict with `QUALITY-STANDARDS.md`, which
-describes "the iridescent rainbow MXT OLOGY wordmark". The approved margarita
-Element `0beecfb3-8141-42d3-8e85-eaf091bb1fcd` says the opposite in its own
-text: *"large gradient 'M' monogram … with 'MXTOLOGY' in white capitals directly
-beneath, both HORIZONTAL — NO vertical rainbow wordmark."*
+   Weight of evidence, for the ruling only — not a licence to act on it: the
+   inset-label claim is made by exactly two Elements (`mxt-cosmo-REAL-2609`,
+   `mxt-pornstar-REAL-2609`). Full-bleed is stated by all eleven approved
+   Elements, all eleven `-CORRECTED-2608`, `mxt-pouch-SCALE-2609`, and
+   `mxt-pornstar-V3/V4/V5/V6-2609` — including `V6`, created **eleven minutes
+   before** `mxt-pornstar-REAL-2609` from the same September reference set. So
+   the 2609 generation contradicts *itself* on this point, which is why the
+   count cannot settle it.
+
+2. **Proportions — NOT a conflict. Withdrawn 2026-10-09.** The two Elements are
+   measuring different things and agree once that is noticed.
+   `mxt-pouch-SCALE-2609` gives **125mm wide × 170mm tall including the top seal
+   band**, then calls the pouch squat on the basis of *"the body alone is about
+   140mm tall, so the body is only ~1.15× as tall as it is wide"* — 140/125 =
+   1.12. `-REAL-2609` says *"roughly 3 wide to 4 tall"* = 1.33, against
+   170/125 = **1.36 including the seal band**. Body ratio 1.12, overall ratio
+   1.36. Both are correct; neither contradicts the other. Every 2609 Element
+   that states millimetres states the same 125 × 170.
+
+3. **Rainbow wordmark — NOT a conflict with the Elements.
+   `QUALITY-STANDARDS.md` was wrong and has been corrected (2026-10-09).** The
+   standards file described the pouch as carrying "the iridescent rainbow MXT
+   OLOGY wordmark". **No live Element says that of a pouch.** All eleven
+   approved Elements say the opposite in their own text — *"both HORIZONTAL —
+   NO vertical rainbow wordmark"* — and so does every `-CORRECTED-2608` and
+   every 2609 Element. The rainbow MXT-over-OLOGY lockup is real, but it
+   belongs to the **"Party In A Box" mailer carton lid**
+   (`mxt-partybox-CURRENT-202608`): *"centred 'MXT' in bright rainbow-gradient
+   capitals … directly above 'OLOGY' in solid white capitals."* The standards
+   file had transposed the box lid onto the pouch. Fixed at source; no founder
+   ruling needed.
 
 **Nothing has been re-pointed and nothing has been quarantined.** Which lineage
 is correct is a founder call and this file reserves it to the founder. Until it
@@ -73,6 +103,12 @@ that is precisely the reasoning that caused the 2026-08-10 failure.
 descriptions**, not only check that each approved UUID is present and
 `completed`. A presence check cannot catch a newer Element declaring an approved
 one wrong, which is how this sat undetected for three weeks.
+
+**Reconcile 2026-10-09:** 61 Elements live, unchanged. All 11 approved UUIDs
+present and `completed`. No Element created since 2026-09-14 and no description
+edited since the 2026-10-02 read — the workspace is static, so the block is
+costing imagery and nothing is resolving it on its own. Descriptions diffed in
+full per the rule above; result is the three-point breakdown restated above.
 
 ## Status: ALL ELEMENTS QUARANTINED (2026-08-10)
 
