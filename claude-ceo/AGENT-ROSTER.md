@@ -62,6 +62,21 @@ at the top of every triage with `to:aaron@mxtology.com.au newer_than:3d` and
 check the recipient addresses on what comes back — do not trust this table
 without re-checking, including when it says what you expect.
 
+**Flip log.** Three flips to the personal mailbox are now on record:
+
+| Date | What happened |
+|---|---|
+| 2026-09-26 | Correction: connector confirmed on aaron@, after an earlier session recorded it as the Aussie Floats mailbox |
+| 2026-10-04 | Flipped to artrajeus@gmail.com for one day; back on aaron@ by 5 Oct |
+| **2026-10-17** | **Flipped again.** `to:aaron@mxtology.com.au newer_than:3d` returned empty while `in:inbox newer_than:1d` returned mail addressed to artrajeus@gmail.com with `authuser=artrajeus@gmail.com`. MXTology mail was not reachable; no triage was run and nothing personal was reported |
+
+**When it is on the personal mailbox:** say so in the report, state plainly that
+MXTology mail was not reachable, give the reconnect step (re-authorise the Gmail
+connector at https://claude.ai/customize/connectors, selecting
+aaron@mxtology.com.au), and **do not triage the personal inbox** — not even to
+summarise it. Three flips in three weeks means a run of empty triages is more
+likely to be a broken identity than a quiet mailbox.
+
 | Business mailbox | Covered? | Via |
 |---|---|---|
 | aaron@mxtology.com.au | ✅ **connected and in scope** | Gmail connector is authenticated as this account (verified 2026-09-26) |
