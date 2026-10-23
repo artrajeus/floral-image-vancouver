@@ -92,7 +92,11 @@ repeated, and nothing replaced them.
 Helen (×2), Derryn Cooley, Erin Christmann, Stu (Thirsty Camel Dodges Ferry),
 Gabby (Ardrossan Cellars), two fully discounted (Erika Davis $140, Ben Jaska
 $50) and **#2160 in your own name at $290 gross discounted to zero** — worth
-confirming that last one was deliberate. The sampling motion is running at
+confirming that last one was deliberate. *Closed 2026-10-24: it was deliberate.
+Xin Chen at Thoroughbred Park wrote on 6 October that "there is a cash payment
+of $290 should be included in the calculation" on the Hops & Hooves takings;
+#2160 is that reconciliation, and Shopify now shows it fully reversed
+(−$290.00) in the 23 October payout.* The sampling motion is running at
 volume now; it has produced two trade orders out of roughly a dozen packs, so
 it works, but the conversions lag the sends by about a week and this week was
 the sending half of that cycle.
@@ -102,6 +106,16 @@ the these Tommy's Margarita Mai Thai Espresso"* — and **it still has not
 shipped**, because the quantity is ambiguous (72 pouches or 24?) and the
 clarifying draft `r751502372465480703` is unsent. That is the third trade
 account and the only money standing still.
+
+> **RETRACTED 2026-10-24.** This was already wrong when it was published. Aaron
+> answered Ray himself on **22 October at 04:29 ACDT** — *"Haha absolutely mate
+> you won't regret it! These things are going off! I'll slot you in for Tuesday
+> dispatch mate. Invoice will come through shortly"* — reading the order as
+> 2×12 and booking dispatch for Tuesday 27 October. The draft had been deleted,
+> not left pending. I read the draft list and never read the thread, which is
+> the identical root cause as the five-week trade-terms error of 9 October. The
+> rule is now in `QUALITY-STANDARDS.md`: an unsent draft is not evidence that
+> anything is outstanding.
 
 ## Quality check
 
@@ -128,8 +142,12 @@ Closed 2026-08-27. Not a burst week, not a control week, nothing to score.
 1. **Cap total daily ad spend.** Three weeks of recommending it; spend is up 12×.
 2. **Re-send the Cup email to engaged 2026 buyers only.** Eleven days left.
 3. **Clarify Ray's quantity and ship it.**
-4. **Answer Robbie Ringland** — fourteen days unsent, **Cup Day is eleven days
-   away** and neither November date is in the calendar.
+4. **Answer Robbie Ringland** — the draft was deleted without being sent, and
+   no reply to him exists in `in:sent`. **Cup Day is Tuesday 3 November**, ten
+   days away. *Corrected 2026-10-24: it IS in the calendar — a `Canberra Race
+   Course` entry at 09:30, created 9 October. Saying "neither November date is
+   in the calendar" on 19 and 23 October was an unchecked assertion; only the
+   22 November Community Chest is genuinely absent.*
 5. **Connect Xero.** Premix King's $8.99 is still unanswerable.
 6. **SpringOUT: stall dimensions and 10 or 15 amps.** Two questions, two weeks.
 7. Abandoned Checkout — **tenth week**.

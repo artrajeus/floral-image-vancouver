@@ -120,3 +120,27 @@ right-way-up, gradient M monogram present, no third-party trademarks in shot.
 - Numbers cite their source and period.
 - Leads with decisions needed, not background.
 - Under ~400 words for daily, ~700 for weekly.
+
+### Before calling anything "outstanding", read the sent folder (added 2026-10-24)
+
+**An unsent draft is not evidence that the thing is unanswered.** Aaron answers
+his own mail faster than the drafts get cleared, so the draft list and the
+mailbox disagree constantly. Check the thread, not the draft.
+
+The rule exists because the same mistake has now happened twice from the same
+cause:
+
+| Date | What was reported | What was true |
+|---|---|---|
+| 2026-09-04 → 10-09 | Trade terms were a pending founder decision, carried **five weeks** | Aaron had written them to Josh on 10 September — $7/pouch ex GST, 45% margin, 125-cocktail starter box, $30 flat freight |
+| **2026-10-23** | Ray's Sea Breeze order "still has not shipped, because the quantity is ambiguous and the clarifying draft `r751502372465480703` is unsent" | Aaron had replied **22 Oct 04:29 ACDT**: *"I'll slot you in for Tuesday dispatch mate. Invoice will come through shortly"* — quantity read as 2×12, dispatch booked. The draft was deleted, not pending |
+
+**Procedure.** For every item about to be reported as waiting, blocked, unsent
+or unanswered, run `in:sent` on that thread or counterparty over a window wider
+than the draft's age, and quote the latest message in the thread — from either
+side. A draft ID alone is not a finding.
+
+**Same test for the calendar.** "Not in the calendar" means searched across the
+whole forward range, not just the week in view. Cup Day was reported missing on
+19 and 23 October; the `Canberra Race Course` entry for 3 November had existed
+since 9 October.
