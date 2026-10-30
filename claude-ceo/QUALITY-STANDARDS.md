@@ -144,3 +144,23 @@ side. A draft ID alone is not a finding.
 whole forward range, not just the week in view. Cup Day was reported missing on
 19 and 23 October; the `Canberra Race Course` entry for 3 November had existed
 since 9 October.
+
+### A truncated result is not evidence of absence (added 2026-10-30)
+
+On **27 October** I reported that draft orders `#D95` and `#D96` "were deleted."
+Neither was. I had queried `draftOrders(first: 6)`, the page filled up, and I
+read the two missing names as proof they were gone. `#D95` had in fact been
+released into order `#2181` and `#D96` was still sitting open at $584.40 —
+which mattered, because Ray's dispatch was already late and that draft was the
+thing waiting to be picked.
+
+**Rule.** Before reporting that something no longer exists, re-query with a
+limit comfortably above the expected count, or filter to the exact identifier.
+A record missing from a capped list is unexplained, not absent. This is the same
+error as the sent-folder rule above and the Instagram "five publish runs" error
+of 23 October: in all three I treated a gap in what I happened to look at as a
+fact about the world.
+
+**The three together make one test.** Before any claim that something did not
+happen, did not send, or no longer exists, name the evidence that would show it
+*had* happened, and confirm that evidence was actually in scope of the query.
